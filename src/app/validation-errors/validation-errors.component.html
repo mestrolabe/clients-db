@@ -1,0 +1,6 @@
+<ng-container *ngIf="errors && errors['required']">&#9900; შეიყვანეთ {{errSub}} <br> </ng-container>
+<ng-container *ngIf="errors && errors['notUnique']">&#9900; აღნიშნული {{errSub}} უკვე არსებობს, სცადეთ ხელახლა <br>
+</ng-container>
+<ng-container *ngIf="errors && errors['minlength']">&#9900; {{errSub}} უნდა შეიცავდეს მინიმუმ {{minlen}} <br> </ng-container>
+<ng-container *ngIf="errors && errors['maxlength']">&#9900; {{errSub}} უნდა შეიცავდეს მაქსიმუმ {{maxlen}} <br> </ng-container>
+<ng-container *ngIf="errors && errors['pattern']">&#9900; {{errSub}} უნდა {{patterns}} <br> </ng-container>

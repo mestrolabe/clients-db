@@ -1,0 +1,130 @@
+<!--Add/Edit Client Component Factory Resolver-->
+<ng-template appAddEditResolver></ng-template>
+
+<!--Table-->
+<p-table #clientList [value]="clients" dataKey="id"
+    [globalFilterFields]="['id','firstName','lastName','gender', 'idNumber']" styleClass="p-datatable-striped"
+    [paginator]="true" [rows]="10" [rowsPerPageOptions]="[10,25,50]" stateStorage="session" stateKey="key1">
+
+    <!--Heading for add button and search box-->
+    <ng-template pTemplate="caption">
+        <div class="grid">
+            <div class="col">
+
+            </div>
+            <div class="col flex justify-content-end">
+                <button pButton label="ახალი კლიენტის დამატება" class="p-button-outlined" icon="pi pi-plus"
+                    (click)="addNewClient()"></button>
+            </div>
+        </div>
+    </ng-template>
+    <!--/Heading for add button and search box-->
+
+    <!--Header row-->
+    <ng-template pTemplate="header">
+        <tr>
+            <th style="width: 3rem"></th>
+            <th pSortableColumn="id">ID <p-sortIcon field="id"></p-sortIcon>
+            </th>
+            <th>ფოტოსურათი</th>
+            <th pSortableColumn="firstName">
+                <p-columnFilter type="text" field="firstName" display="menu"></p-columnFilter>სახელი <p-sortIcon
+                    field="firstName"></p-sortIcon>
+            </th>
+            <th pSortableColumn="lastName">
+                <p-columnFilter type="text" field="lastName" display="menu"></p-columnFilter>გვარი <p-sortIcon
+                    field="lastName"></p-sortIcon>
+            </th>
+            <th pSortableColumn="gender">
+                <p-columnFilter type="text" field="gender" display="menu"></p-columnFilter>სქესი <p-sortIcon
+                    field="gender"></p-sortIcon>
+            </th>
+            <th pSortableColumn="idNumber">
+                <p-columnFilter type="text" field="idNumber" display="menu"></p-columnFilter>პირადი №<p-sortIcon
+                    field="idNumber"></p-sortIcon>
+            </th>
+            <th>პროფილი</th>
+        </tr>
+    </ng-template>
+    <!--/Header row-->
+
+    <!--Main Body-->
+    <ng-template pTemplate="body" let-client let-expanded="expanded">
+        <tr>
+            <td>
+                <button type="button" pButton pRipple [pRowToggler]="client"
+                    class="p-button-text p-button-rounded p-button-plain"
+                    [icon]="expanded ? 'pi pi-chevron-down' : 'pi pi-chevron-right'"></button>
+            </td>
+            <td>{{client.id}}</td>
+            <td><img [src]="'assets/imgs/clients/' + client.img" [alt]="client.firstName" width="65"
+                    class="p-shadow-4" /></td>
+            <td>{{client.firstName}}</td>
+            <td>{{client.lastName}}</td>
+            <td>{{client.gender}}</td>
+            <td>{{client.idNumber}}</td>
+            <td><button pButton pRipple type="button" icon="pi pi-external-link" iconPos="right" label="გახსნა"
+                    class="p-button-raised p-button-text" [routerLink]="['/client-list', client.id]"></button></td>
+        </tr>
+    </ng-template>
+    <!--/Main Body-->
+
+
+    <!--Expanded row template-->
+    <ng-template pTemplate="rowexpansion" let-client>
+        <!--Expanded row table headers-->
+        <tr>
+            <td colspan="8">
+                <div class="p-p-3">
+                    <p-table [value]="client.accounts" dataKey="id">
+                        <ng-template pTemplate="header">
+        <tr>
+            <th pSortableColumn="id">ანგარიშის ნომერი<p-sortIcon field="price"></p-sortIcon>
+            </th>
+            <th pSortableColumn="customer">ანგარიშის ტიპი<p-sortIcon field="customer"></p-sortIcon>
+            </th>
+            <th pSortableColumn="date">ვალუტა<p-sortIcon field="date"></p-sortIcon>
+            </th>
+            <th pSortableColumn="amount">ანგარიშის სტატუსი <p-sortIcon field="amount"></p-sortIcon>
+            </th>
+        </tr>
+    </ng-template>
+    <!--/Expanded row table headers-->
+
+    <!--Expanded row table body-->
+    <ng-template pTemplate="body" let-client>
+        <tr>
+            <td>{{client.accNumber}}</td>
+            <td>{{client.accType}}</td>
+            <td>{{client.valute}}</td>
+            <td>
+                <span [class]="'client-badge status-' + client.accStatus.toLowerCase()">{{client.accStatus}}</span>
+            </td>
+        </tr>
+    </ng-template>
+    <!--/Expanded row table body-->
+
+    <!--/Expanded row table template-->
+
+    <!--Search keyword not found-->
+    <ng-template pTemplate="emptymessage">
+        <tr>
+            <td colspan="8">ანგარიში ვერ მოიძებნა.</td>
+        </tr>
+    </ng-template>
+    <!--/Search keyword not found-->
+
+</p-table>
+</div>
+</td>
+</tr>
+</ng-template>
+
+<!--Paginators-->
+<ng-template pTemplate="paginatorleft">
+</ng-template>
+<ng-template pTemplate="paginatorright">
+</ng-template>
+<!--/Paginators-->
+
+</p-table>

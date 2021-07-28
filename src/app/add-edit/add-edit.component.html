@@ -1,0 +1,45 @@
+<p-dialog [(visible)]="display" [style]="{width: '70vw'}" [blockScroll]="true" [modal]="true">
+
+    <form [formGroup]="addClient" class="row g-3 needs-validation" (ngSubmit)="onSubmit()">
+        <h2>{{title}}</h2>
+        <h4>პირადი ინფორმაცია</h4>
+
+
+        <div class="formgrid grid">
+            <!--First Name-->
+            <div class="field lg:col-4 sm:col-12">
+                <label for="fname">სახელი</label>
+                <input id="fname" type="text" class="inputfield w-full" [ngClass]="{'ng-invalid ng-dirty': f.firstName.invalid && (f.firstName.dirty || f.firstName.touched)}" aria-describedby="fname-help"
+                    formControlName="firstName" pInputText required />
+                <small
+                    *ngIf="f.firstName.invalid && (f.firstName.dirty || f.firstName.touched)"
+                    id="fname=help" class="p-error">
+                    <validation-errors [errors]="f.firstName.errors" errSub="სახელი"
+                        minlen="2 ასო-ბგერას" maxlen="50 ასო-ბგერას"
+                        patterns="შეიცავდეს მხოლოდ ქართულ ან ლათინურ ასო-ბგერებს"></validation-errors>
+                </small>
+            </div>
+            <!--Last Name-->
+            <div class="field lg:col-4 sm:col-12">
+                <label for="lname">გვარი</label>
+                <input id="lname" type="text" class="inputfield w-full" [ngClass]="{'ng-invalid ng-dirty': f.lastName.invalid && (f.lastName.dirty || f.lastName.touched)}" aria-describedby="lname-help"
+                    formControlName="lastName" pInputText required />
+                <small
+                    *ngIf="f.lastName.invalid && (f.lastNamedirty || f.lastName.touched)"
+                    id="lname=help" class="p-error">
+                    <validation-errors [errors]="f.lastName.errors" errSub="გვარი"
+                        minlen="2 ასო-ბგერას" maxlen="50 ასო-ბგერას"
+                        patterns="შეიცავდეს მხოლოდ ქართულ ან ლათინურ ასო-ბგერებს"></validation-errors>
+                </small>
+            </div>
+            <div class="field lg:col-4 sm:col-12">
+                <label for="lastname2">Lastname</label>
+                <p-dropdown [options]="eGender"  placeholder="Select a City" optionLabel="eGender"></p-dropdown>
+
+            </div>
+        </div>
+
+        <!--First Name-->
+
+    </form>
+</p-dialog>

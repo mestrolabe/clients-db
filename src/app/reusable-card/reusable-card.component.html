@@ -1,0 +1,7 @@
+<p-card header="ანგარიშის ნომერი: #{{account.accNumber}}" subheader="ანგარიშის ტიპი: {{account.accType}}" [style]="{width: '100%', background: '#E7F1F9'}" styleClass="p-card-shadow">
+
+    ვალუტა: {{account.valute}}
+    <ng-template pTemplate="footer">
+     ანგარიშის სტატუსი: <span [class]="'client-badge status-' + account.accStatus.toLowerCase()">{{account.accStatus}}</span>
+    </ng-template>
+</p-card>

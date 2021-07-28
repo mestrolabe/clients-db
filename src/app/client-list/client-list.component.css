@@ -1,0 +1,18 @@
+/* Badge Styles */
+.client-badge {
+    border-radius: 2px;
+    padding: .25em .5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .3px;
+}
+
+.client-badge.status-აქტიური {
+    background: #c8e6c9;
+    color: #256029;
+}
+.client-badge.status-დახურული {
+    background: #ffcdd2;
+    color: #c63737;
+}

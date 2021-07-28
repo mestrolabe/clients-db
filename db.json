@@ -1,0 +1,36 @@
+{
+  "clients": [
+    {
+      "id": 1,
+      "firstName": "Barbare",
+      "lastName": "Tepnadze",
+      "gender": "Female",
+      "idNumber": "01024080733",
+      "phoneNumber": 596103690,
+      "mailingAddress": {
+        "country": "საქართველო",
+        "city": "თბილისი",
+        "address": "მისამართი"
+      },
+      "physicalAddress": {
+        "country": "საქართველო",
+        "city": "თბილისი",
+        "address": "მისამართი"
+      },
+      "img": "woman.png",
+      "accounts": [
+        {
+          "id": 1,
+          "accNumber": 1234567,
+          "clientNumber": 1,
+          "accType": "მიმდინარე",
+          "valute": [
+            "GEL",
+            "USD"
+          ],
+          "accStatus": "აქტიური"
+        }
+      ]
+    }
+  ]
+}

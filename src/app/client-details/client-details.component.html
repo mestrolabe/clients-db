@@ -1,1 +1,91 @@
-<p>client-details works!</p>
+<div class="container">
+    <div class="main-body">
+      <div class="row mb-5">
+        <div class="col-12 d-flex justify-content-end">
+          <p-button label="რედაქტირება" icon="pi pi-pencil" styleClass="p-button-md p-button-outlined mx-2" [routerLink]="['/client-list', client.id, 'client']"></p-button>
+          <p-button label="კლიენტის წაშლა" icon="pi pi-trash" styleClass="p-button-md p-button-outlined p-button-danger" (click)="deleteClient()"></p-button>
+        </div>
+      </div>
+      <div class="row gutters-sm">
+        <!--profile card-->
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex flex-column align-items-center text-center">
+                <img [src]="'assets/imgs/clients/' + client.img" [alt]="client.firstName" class="rounded-circle"
+                  width="180">
+                <div class="mt-3">
+                  <h4>{{client.firstName}} {{client.lastName}}</h4>
+                  <p class="text-secondary mb-1">#{{client.id}}</p>
+                  <p class="text-secondary mb-1">{{client.gender}}</p>
+                  <p class="text-muted font-size-sm"><i class="pi pi-id-card"></i>
+                    {{client.idNumber}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card mb-3">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-3">
+                  <h6 class="mb-0">ტელეფონი</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                  {{client.phoneNumber}}
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <h6 class="mb-0">იურიდიული მისამართი</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                  <p>
+                    <strong>ქვეყანა</strong>: {{client.mailingAddress.country}}
+                  </p>
+                  <p>
+                    <strong>ქალაქი</strong>: {{client.mailingAddress.city}}
+                  </p>
+                  <p>
+                    <strong>მისამართი</strong>: {{client.mailingAddress.address}}
+                  </p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <h6 class="mb-0">ფაქტიური მისამართი</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                  <p>
+                    <strong>ქვეყანა</strong>: {{client.physicalAddress.country}}
+                  </p>
+                  <p>
+                    <strong>ქალაქი</strong>: {{client.physicalAddress.city}}
+                  </p>
+                  <p>
+                    <strong>მისამართი</strong>: {{client.physicalAddress.address}}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row gutters-sm mt-5">
+        <div class="row">
+          <div class="col-md-6 mb-3 mt-3">
+            <h1>ანგარიშები</h1>
+          </div>
+        </div>
+        <!--profile card-->
+  
+        <div class="col-md-6 mb-3 mt-3" *ngFor="let acc of client.accounts">
+          <reusable-card [account]="acc"></reusable-card>
+        </div>
+      </div>
+  
+    </div>
+  </div>

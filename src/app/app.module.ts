@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenubarModule } from 'primeng/menubar';
 import { TabViewModule } from 'primeng/tabview';
 import { AddEditResolverDirective } from './directives/add-edit-resolver.directive';
+import { ReusableCardModule } from './reusable-card/reusable-card.module';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AddEditResolverDirective } from './directives/add-edit-resolver.directi
     TabViewModule,
     FormsModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReusableCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

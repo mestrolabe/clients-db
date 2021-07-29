@@ -9,11 +9,11 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {DynamicDialogModule} from 'primeng/dynamicdialog';
 
 // PrimeNG Modules
-import {InputTextModule} from 'primeng/inputtext';
 import {DialogModule} from 'primeng/dialog';
 import {ButtonModule} from 'primeng/button';
 import {MultiSelectModule} from 'primeng/multiselect';
-import {DropdownModule} from 'primeng/dropdown';
+import {SelectButtonModule} from 'primeng/selectbutton';
+
 
 
 @NgModule({
@@ -24,14 +24,13 @@ import {DropdownModule} from 'primeng/dropdown';
   imports: [
     CommonModule,
     AddEditRoutingModule,
-    InputTextModule,
     FormsModule,
     DynamicDialogModule,
     DialogModule,
     ReactiveFormsModule,
     ButtonModule,
     MultiSelectModule,
-    DropdownModule
+    SelectButtonModule
   ],
   exports: [
     AddEditComponent

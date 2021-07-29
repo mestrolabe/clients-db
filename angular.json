@@ -31,7 +31,8 @@
               "node_modules/primeicons/primeicons.css",
               "node_modules/primeng/resources/primeng.min.css",
               "node_modules/primeflex/primeflex.min.css",
-              "node_modules/primeng/resources/themes/md-light-indigo/theme.css",
+              "node_modules/bootstrap/dist/css/bootstrap.css",
+              "primeng/resources/themes/bootstrap4-light-blue/theme.css",
               "src/styles.css"
             ],
             "scripts": []

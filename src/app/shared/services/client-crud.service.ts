@@ -32,9 +32,8 @@ export class ClientCrudService {
         city: null as any,
         address: null as any
       },
-      img: null as any,
+      img: 'woman.png',
       accounts: [{
-        id: null as any,
         accNumber: null as any,
         accType: null as any,
         valute: [],

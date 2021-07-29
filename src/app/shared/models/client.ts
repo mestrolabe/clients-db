@@ -1,17 +1,16 @@
 import { IClientAcc } from "./client-account";
 
-
 export enum Gender {
     FEMALE = "მდედრობითი",
-    MALE = "მამრობითი",
-    OTHER = "სხვა"
+    MALE = "მამრობითი"
 }
+
 
 export interface IClient {
     id: number;
     firstName: string;
     lastName: string;
-    gender?: Gender;
+    gender?: 'მდედრობითი' | 'მამრობითი' | '';
     idNumber: string;
     phoneNumber: number;
     mailingAddress: {

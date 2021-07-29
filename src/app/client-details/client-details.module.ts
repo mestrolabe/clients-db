@@ -3,7 +3,10 @@ import { CommonModule } from '@angular/common';
 
 import { ClientDetailsRoutingModule } from './client-details-routing.module';
 import { ClientDetailsComponent } from './client-details.component';
+import { ReusableCardModule } from '../reusable-card/reusable-card.module';
 
+
+import {ButtonModule} from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -11,7 +14,9 @@ import { ClientDetailsComponent } from './client-details.component';
   ],
   imports: [
     CommonModule,
-    ClientDetailsRoutingModule
+    ClientDetailsRoutingModule,
+    ButtonModule,
+    ReusableCardModule
   ],
   exports: [
     ClientDetailsComponent

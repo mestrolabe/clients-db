@@ -3,8 +3,8 @@ import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DialogService } from 'primeng/dynamicdialog';
 import { Subscription } from 'rxjs';
-import { Gender, IClient } from '../shared/models/client';
-import { AccStatus, AccType, IClientAcc, Valute } from '../shared/models/client-account';
+import { IClient } from '../shared/models/client';
+import { IClientAcc } from '../shared/models/client-account';
 import { ClientCrudService } from '../shared/services/client-crud.service';
 
 @Component({
@@ -14,23 +14,6 @@ import { ClientCrudService } from '../shared/services/client-crud.service';
   providers: [DialogService]
 })
 export class AddEditComponent implements OnInit {
-
-/*
-  // Get values from Enums
-  getValues(enumObj: any): Array<string>{
-    let arr = new Array<string>();
-    for(let value in enumObj){
-      arr.push(value);
-    }
-    return arr;
-  }
-
-  eAccType = this.getValues(AccType);
-  eAccStatus = this.getValues(AccStatus);
-  eValute = this.getValues(Valute);
-  eGender = this.getValues(Gender);
-*/
-  
   title = '';
   client!: IClient;
   addClient!: FormGroup;
@@ -50,6 +33,13 @@ export class AddEditComponent implements OnInit {
     private router: Router
   ) { }
 
+
+  valutes = [
+    {name: 'GEL', value: 'GEL'},
+    {name: 'USD', value: 'USD'},
+    {name: 'EUR', value: 'EUR'},
+    {name: 'RUB', value: 'RUB'}
+  ]
 
   ngOnInit(): void {
     // Form Initialization
@@ -103,6 +93,7 @@ export class AddEditComponent implements OnInit {
     this.sub.unsubscribe();
   }
 
+
   /* ------------------------ Getters ----------------------------*/
   get Physical() {
     return (this.addClient.controls.physicalAddress as FormGroup).controls;
@@ -113,9 +104,11 @@ export class AddEditComponent implements OnInit {
   get AccountsSelector() {
     return this.addClient.get('accounts') as FormArray;
   }
-  get f(){
+  get f() {
     return this.addClient.controls;
   }
+
+
   /* ------------------------ Client Functions ----------------------------*/
   // Get single client
   getClient(id: number): void {
@@ -174,7 +167,6 @@ export class AddEditComponent implements OnInit {
       img: this.client.img
     });
     this.addClient.setControl('accounts', this.setExistingAccounts(client.accounts));
-
   }
 
   // Save the client
@@ -228,9 +220,9 @@ export class AddEditComponent implements OnInit {
   // Create new form inputs
   addAccount(): FormGroup {
     return this.fb.group({
-      accNumber: ['', Validators.required],
+      accNumber: [null, Validators.required],
       accType: ['', Validators.required],
-      valute: this.fb.array([], [Validators.required]),
+      valute: [[], Validators.required],
       accStatus: ['', Validators.required]
     })
   }
@@ -245,6 +237,7 @@ export class AddEditComponent implements OnInit {
     this.AccountsSelector.removeAt(index);
     this.AccountsSelector.markAsDirty();
     this.AccountsSelector.markAsTouched();
-   }
+  }
+
 
 }

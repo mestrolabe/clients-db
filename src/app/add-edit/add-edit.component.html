@@ -1,45 +1,273 @@
-<p-dialog [(visible)]="display" [style]="{width: '70vw'}" [blockScroll]="true" [modal]="true">
+<p-dialog [(visible)]="display" [style]="{width: '55vw'}" [blockScroll]="true" [modal]="true">
 
-    <form [formGroup]="addClient" class="row g-3 needs-validation" (ngSubmit)="onSubmit()">
-        <h2>{{title}}</h2>
-        <h4>პირადი ინფორმაცია</h4>
-
-
-        <div class="formgrid grid">
+    <h1 class='font-weight-bold text-center'>{{title}}</h1>
+    <form [formGroup]="addClient" (ngSubmit)="onSubmit()" class="p-4">
+        <h3 class="text-dark mt-4 mb-3">პირადი ინფორმაცია</h3>
+        <div class="row">
             <!--First Name-->
-            <div class="field lg:col-4 sm:col-12">
-                <label for="fname">სახელი</label>
-                <input id="fname" type="text" class="inputfield w-full" [ngClass]="{'ng-invalid ng-dirty': f.firstName.invalid && (f.firstName.dirty || f.firstName.touched)}" aria-describedby="fname-help"
-                    formControlName="firstName" pInputText required />
-                <small
-                    *ngIf="f.firstName.invalid && (f.firstName.dirty || f.firstName.touched)"
-                    id="fname=help" class="p-error">
-                    <validation-errors [errors]="f.firstName.errors" errSub="სახელი"
-                        minlen="2 ასო-ბგერას" maxlen="50 ასო-ბგერას"
-                        patterns="შეიცავდეს მხოლოდ ქართულ ან ლათინურ ასო-ბგერებს"></validation-errors>
-                </small>
+            <div class="col-md-6">
+                <label for="firstName" class="form-label">სახელი</label>
+                <input type="text" class="form-control" id="firstName" formControlName="firstName"
+                    [ngClass]="{'is-invalid': f.firstName.errors && (f.firstName.touched || f.firstName.dirty), 'is-valid':f.firstName.valid}"
+                    required>
+
+                <!--Validation-->
+                <div *ngIf="f.firstName.invalid && (f.firstName.dirty || f.firstName.touched)" class="invalid-feedback">
+                    <validation-errors [errors]="f.firstName.errors" errSub="სახელი" minlen="2 ასო-ბგერას"
+                        maxlen="50 ასო-ბგერას" patterns="შეიცავდეს მხოლოდ ქართულ ან ლათინურ ასო-ბგერებს">
+                    </validation-errors>
+                </div>
             </div>
             <!--Last Name-->
-            <div class="field lg:col-4 sm:col-12">
-                <label for="lname">გვარი</label>
-                <input id="lname" type="text" class="inputfield w-full" [ngClass]="{'ng-invalid ng-dirty': f.lastName.invalid && (f.lastName.dirty || f.lastName.touched)}" aria-describedby="lname-help"
-                    formControlName="lastName" pInputText required />
-                <small
-                    *ngIf="f.lastName.invalid && (f.lastNamedirty || f.lastName.touched)"
-                    id="lname=help" class="p-error">
-                    <validation-errors [errors]="f.lastName.errors" errSub="გვარი"
-                        minlen="2 ასო-ბგერას" maxlen="50 ასო-ბგერას"
-                        patterns="შეიცავდეს მხოლოდ ქართულ ან ლათინურ ასო-ბგერებს"></validation-errors>
-                </small>
+            <div class="col-md-6">
+                <label for="lastName" class="form-label">გვარი</label>
+                <input type="text" class="form-control" id="lastName" formControlName="lastName"
+                    [ngClass]="{'is-invalid': f.lastName.errors && (f.lastName.touched || f.lastName.dirty), 'is-valid':f.lastName.valid}"
+                    required>
+                <!--Validation-->
+                <div *ngIf="f.lastName.invalid && (f.lastName.dirty || f.lastName.touched)" class="invalid-feedback">
+                    <validation-errors [errors]="f.lastName.errors" errSub="გვარი" minlen="2 ასო-ბგერას"
+                        maxlen="50 ასო-ბგერას" patterns="შეიცავდეს მხოლოდ ქართულ ან ლათინურ ასო-ბგერებს">
+                    </validation-errors>
+                </div>
             </div>
-            <div class="field lg:col-4 sm:col-12">
-                <label for="lastname2">Lastname</label>
-                <p-dropdown [options]="eGender"  placeholder="Select a City" optionLabel="eGender"></p-dropdown>
-
+        </div>
+        <div class="row mt-3">
+            <!--Gender-->
+            <div class="col-md-6">
+                <label class="form-label">სქესი</label>
+                <select class="form-select"
+                    [ngClass]="{'is-invalid': f.gender.errors && (f.gender.touched || f.gender.dirty), 'is-valid':f.gender.valid}"
+                    formControlName="gender" required>
+                    <option selected>აირჩიეთ სქესი</option>
+                    <option value="მდედრობითი">მდედრობითი</option>
+                    <option value="მამრობითი">მამრობითი</option>
+                </select>
+                <!--Validation-->
+                <div *ngIf="f.gender.invalid && (f.gender.dirty || f.gender.touched)" class="invalid-feedback">
+                    <validation-errors [errors]="f.gender.errors" errSub="სქესი"></validation-errors>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="idNumber" class="form-label">პირადი ნომერი</label>
+                <input type="text" class="form-control" id="idNumber" formControlName="idNumber"
+                    [ngClass]="{'is-invalid': f.idNumber.errors && (f.idNumber.touched || f.idNumber.dirty), 'is-valid':f.idNumber.valid}"
+                    required>
+                <!--Validation-->
+                <div *ngIf="f.idNumber.invalid && (f.idNumber.dirty || f.idNumber.touched)" class="invalid-feedback">
+                    <validation-errors [errors]="f.idNumber.errors" errSub="პირადი ნომერი" minlen="11 ციფრს"
+                        maxlen="11 ციფრს" patterns="შეიცავდეს მხოლოდ ციფრებს"></validation-errors>
+                </div>
             </div>
         </div>
 
-        <!--First Name-->
+        <h3 class="text-dark mt-5 mb-3">საკონტაქტო ინფორმაცია</h3>
+        <div class="row">
+            <!--Phone Number-->
+            <div class="col-7">
+                <label for="phoneNumber" class="form-label">ტელეფონის ნომერი</label>
+                <input type="number" class="form-control" id="phoneNumber" formControlName="phoneNumber"
+                    [ngClass]="{'is-invalid': f.phoneNumber.errors && (f.phoneNumber.touched || f.phoneNumber.dirty), 'is-valid':f.phoneNumber.valid}"
+                    placeholder="xxx-xxx-xxx" required>
+                <!--Validation-->
+                <div *ngIf="f.phoneNumber.invalid && (f.phoneNumber.dirty || f.phoneNumber.touched)"
+                    class="invalid-feedback">
+                    <validation-errors [errors]="f.phoneNumber.errors" errSub="ტელეფონის ნომერი" minlen="9 ციფრს"
+                        maxlen="9 ციფრს" patterns="შეიცავდეს მხოლოდ ციფრებს და იწყებოდეს ციფრი 5-ით">
+                    </validation-errors>
+                </div>
+            </div>
+        </div>
 
+        <h6 class="mt-5 mb-3 text-secondary">იურიდიული მისამართი</h6>
+        <div formGroupName="mailingAddress">
+            <div class="row">
+                <!--Mailing Country-->
+                <div class="col-md-6">
+                    <label for="mcountry" class="form-label">ქვეყანა</label>
+                    <input type="text" class="form-control" id="mcountry" formControlName="country"
+                        [ngClass]="{'is-invalid': Mailing.country.errors && (Mailing.country.touched || Mailing.country.dirty), 'is-valid':Mailing.country.valid}"
+                        required>
+                    <!--Validation-->
+                    <div *ngIf="Mailing.country.invalid && (Mailing.country.dirty || Mailing.country.touched)"
+                        class="invalid-feedback">
+                        <validation-errors [errors]="Mailing.country.errors" errSub="ქვეყანა"></validation-errors>
+                    </div>
+                </div>
+                <!--Mailing City-->
+                <div class="col-md-6">
+                    <label for="mcity" class="form-label">ქალაქი</label>
+                    <input type="text" class="form-control" id="mcity" formControlName="city"
+                        [ngClass]="{'is-invalid': Mailing.city.errors && (Mailing.city.touched || Mailing.city.dirty), 'is-valid':Mailing.city.valid}"
+                        required>
+                    <!--Validation-->
+                    <div *ngIf="Mailing.city.invalid && (Mailing.city.dirty || Mailing.city.touched)"
+                        class="invalid-feedback">
+                        <validation-errors [errors]="Mailing.city.errors" errSub="ქალაქი"></validation-errors>
+                    </div>
+                </div>
+                <!--Mailing Address-->
+                <div class="col-12">
+                    <label for="maddress" class="form-label">მისამართი</label>
+                    <textarea class="form-control" id="maddress" formControlName="address"
+                        [ngClass]="{'is-invalid': Mailing.address.errors && (Mailing.address.touched || Mailing.address.dirty), 'is-valid':Mailing.address.valid}"
+                        required></textarea>
+                    <!--Validation-->
+                    <div *ngIf="Mailing.address.invalid && (Mailing.address.dirty || Mailing.address.touched)"
+                        class="invalid-feedback">
+                        <validation-errors [errors]="Mailing.address.errors" errSub="მისამართი"></validation-errors>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <h6 class="mt-5 mb-3 text-secondary">ფიზიკური მისამართი</h6>
+        <input #checkSame class="form-check-input mb-4 mt-2" type="checkbox" id="sameAdd"
+            (change)="sameAdd(checkSame.checked);" [checked]="false">
+        იგივე რაც იურიდიული მისამართი
+        <div formGroupName="physicalAddress">
+            <div class="row">
+                <!--Physical Country-->
+                <div class="col-md-6">
+                    <label for="pcountry" class="form-label">ქვეყანა</label>
+                    <input type="text" class="form-control" id="pcountry" formControlName="country"
+                        [ngClass]="{'is-invalid': Physical.country.errors && (Physical.country.touched || Physical.country.dirty), 'is-valid':Physical.country.valid}"
+                        required>
+                    <!--Validation-->
+                    <div *ngIf="Physical.country.invalid && (Physical.country.dirty || Physical.country.touched)"
+                        class="invalid-feedback">
+                        <validation-errors [errors]="Physical.country.errors" errSub="ქვეყანა"></validation-errors>
+                    </div>
+                </div>
+                <!--Physical City-->
+                <div class="col-md-6">
+                    <label for="pcity" class="form-label">ქალაქი</label>
+                    <input type="text" class="form-control" id="pcity" formControlName="city"
+                        [ngClass]="{'is-invalid': Physical.city.errors && (Physical.city.touched || Physical.city.dirty), 'is-valid':Physical.city.valid}"
+                        required>
+                    <!--Validation-->
+                    <div *ngIf="Physical.city.invalid && (Physical.city.dirty || Physical.city.touched)"
+                        class="invalid-feedback">
+                        <validation-errors [errors]="Physical.city.errors" errSub="ქალაქი"></validation-errors>
+                    </div>
+                </div>
+                <!--Physical Address-->
+                <div class="col-12">
+                    <label for="paddress" class="form-label">მისამართი</label>
+                    <textarea class="form-control" id="paddress" formControlName="address"
+                        [ngClass]="{'is-invalid': Physical.address.errors && (Physical.address.touched || Physical.address.dirty), 'is-valid':Physical.address.valid}"
+                        required></textarea>
+                    <!--Validation-->
+                    <div *ngIf="Physical.address.invalid && (Physical.address.dirty || Physical.address.touched)"
+                        class="invalid-feedback">
+                        <validation-errors [errors]="Physical.address.errors" errSub="მისამართი"></validation-errors>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Accounts-->
+        <div class="row mt-4">
+            <div class="col-12">
+                <p-button label="ახალი ანგარიშის დამატება" icon="pi pi-plus" styleClass="p-button-sm p-button-outlined"
+                    (click)="addAccountButton()"></p-button>
+            </div>
+        </div>
+
+        <div formArrayName="accounts" class="mt-3" *ngFor="let acc of AccountsSelector.controls; let i = index;">
+            <div [formGroupName]="i">
+                <div class="card border-primary">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-end">
+                            <p-button label="წაშლა" icon="pi pi-trash"
+                                styleClass="p-button-sm p-button-outlined p-button-danger" (click)="deleteAccount(i)"
+                                *ngIf="i>0">
+                            </p-button>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-8">
+                                <!--Account Number-->
+                                <label [attr.for]="'accNumber'+i" class="form-label">ანგარიშის ნომერი</label>
+                                <input type="text" class="form-control" [id]="'accNumber'+i" formControlName="accNumber"
+                                    [ngClass]="{'is-invalid': AccountsSelector['controls'][i].get('accNumber')?.errors && (AccountsSelector['controls'][i].get('accNumber')?.touched || AccountsSelector['controls'][i].get('accNumber')?.dirty), 'is-valid':AccountsSelector['controls'][i].get('accNumber')?.valid}"
+                                    required>
+                                <!--Validation-->
+                                <div *ngIf="AccountsSelector['controls'][i].get('accNumber')?.invalid && (AccountsSelector['controls'][i].get('accNumber')?.dirty || AccountsSelector['controls'][i].get('accNumber')?.touched)"
+                                    class='invalid-feedback'>
+                                    <validation-errors
+                                        [errors]="AccountsSelector['controls'][i].get('accNumber')?.errors"
+                                        errSub="ანგარიშის ნომერი">
+                                    </validation-errors>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <!--Valute-->
+                                <label class="form-label">ვალუტა</label>
+                                <br>
+                                <p-multiSelect formControlName="valute" optionLabel="name" height="30px;"
+                                    optionValue="value" [options]="valutes"
+                                    [ngClass]="{'ng-invalid ng-dirty': AccountsSelector['controls'][i].get('valute')?.errors && (AccountsSelector['controls'][i].get('valute')?.touched || AccountsSelector['controls'][i].get('valute')?.dirty), 'ng-valid ng-pristine success-border':AccountsSelector['controls'][i].get('valute')?.valid}"
+                                    required>
+                                </p-multiSelect>
+                                <!--Validation-->
+                                <!--
+                                    Validation message not showing because of PrimeNG's own bug. 
+                                    Bootstrap multiselect doesn't work with Angular & installing Angular Material to use multiselect clases with PrimeNG's styles.
+                                -->
+                                <div *ngIf="AccountsSelector['controls'][i].get('valute')?.invalid && (AccountsSelector['controls'][i].get('valute')?.dirty || AccountsSelector['controls'][i].get('valute')?.touched)"
+                                    class='invalid-feedback'> 
+                                    <validation-errors [errors]="AccountsSelector['controls'][i].get('valute')?.errors"
+                                        errSub="ერთი ან რამდენიმე ვალუტა">
+                                    </validation-errors>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3 mb-4">
+                            <div class="col-md-6">
+                                <!--Account Type-->
+                                <label class="form-label">ანგარიშის ტიპი</label>
+                                <select class="form-select" formControlName="accType"
+                                    [ngClass]="{'is-invalid': AccountsSelector['controls'][i].get('accType')?.errors && (AccountsSelector['controls'][i].get('accType')?.touched || AccountsSelector['controls'][i].get('accType')?.dirty), 'is-valid':AccountsSelector['controls'][i].get('accType')?.valid}"
+                                    required>
+                                    <option value="მიმდინარე">მიმდინარე</option>
+                                    <option value="შემნახველი">შემნახველი</option>
+                                    <option value="დაგროვებითი">დაგროვებითი</option>
+                                </select>
+                                <!--Validation-->
+                                <div *ngIf="AccountsSelector['controls'][i].get('accType')?.invalid && (AccountsSelector['controls'][i].get('accType')?.dirty || AccountsSelector['controls'][i].get('accType')?.touched)"
+                                    class='invalid-feedback'>
+                                    <validation-errors [errors]="AccountsSelector['controls'][i].get('accType')?.errors"
+                                        errSub="ანგარიშის ტიპი">
+                                    </validation-errors>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <!--Account Status-->
+                                <label class="form-label">ანგარიშის სტატუსი</label>
+                                <select class="form-select" formControlName="accStatus"
+                                    [ngClass]="{'is-invalid': AccountsSelector['controls'][i].get('accStatus')?.errors && (AccountsSelector['controls'][i].get('accStatus')?.touched || AccountsSelector['controls'][i].get('accStatus')?.dirty), 'is-valid':AccountsSelector['controls'][i].get('accStatus')?.valid}"
+                                    required>
+                                    <option value="აქტიური">აქტიური</option>
+                                    <option value="დახურული">დახურული</option>
+                                </select>
+                                <!--Validation-->
+                                <div *ngIf="AccountsSelector['controls'][i].get('accStatus')?.invalid && (AccountsSelector['controls'][i].get('accStatus')?.dirty || AccountsSelector['controls'][i].get('accStatus')?.touched)"
+                                    class='invalid-feedback'>
+                                    <validation-errors
+                                        [errors]="AccountsSelector['controls'][i].get('accStatus')?.errors"
+                                        errSub="ანგარიშის სტატუსი">
+                                    </validation-errors>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 mt-5">
+            <button  class="btn btn-outline-success"
+              type="submit" [disabled]="!addClient.valid">შენახვა</button>
+          </div>
     </form>
 </p-dialog>

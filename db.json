@@ -2,9 +2,9 @@
   "clients": [
     {
       "id": 1,
-      "firstName": "Barbare",
-      "lastName": "Tepnadze",
-      "gender": "Female",
+      "firstName": "ბარბარე",
+      "lastName": "ტეფნაძე",
+      "gender": "მდედრობითი",
       "idNumber": "01024080733",
       "phoneNumber": 596103690,
       "mailingAddress": {
@@ -20,9 +20,102 @@
       "img": "woman.png",
       "accounts": [
         {
-          "id": 1,
+          "id": 0,
           "accNumber": 1234567,
           "clientNumber": 1,
+          "accType": "მიმდინარე",
+          "valute": [
+            "GEL",
+            "USD"
+          ],
+          "accStatus": "აქტიური"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "firstName": "Barbare",
+      "lastName": "Tepnadze",
+      "gender": "მდედრობითი",
+      "idNumber": "12234523341",
+      "phoneNumber": 596103690,
+      "mailingAddress": {
+        "country": "Georgia",
+        "city": "Tbilisi",
+        "address": "ssafsaf"
+      },
+      "physicalAddress": {
+        "country": "Georgia",
+        "city": "Tbilisi",
+        "address": "ssafsaf"
+      },
+      "img": null,
+      "accounts": [
+        {
+          "id": 0,
+          "accNumber": "2414242421",
+          "accType": "შემნახველი",
+          "valute": [
+            "USD",
+            "EUR"
+          ],
+          "accStatus": "აქტიური"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "firstName": "Barbare",
+      "lastName": "Tepnadze",
+      "gender": "მდედრობითი",
+      "idNumber": "12234523341",
+      "phoneNumber": 596103690,
+      "mailingAddress": {
+        "country": "Georgia",
+        "city": "Tbilisi",
+        "address": "esgege"
+      },
+      "physicalAddress": {
+        "country": "Georgia",
+        "city": "Tbilisi",
+        "address": "esgege"
+      },
+      "img": null,
+      "accounts": [
+        {
+          "id": 0,
+          "accNumber": "2414242421",
+          "accType": "მიმდინარე",
+          "valute": [
+            "GEL",
+            "USD"
+          ],
+          "accStatus": "აქტიური"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "firstName": "Barbare",
+      "lastName": "Tepnadze",
+      "gender": "მდედრობითი",
+      "idNumber": "12234523341",
+      "phoneNumber": 596103690,
+      "mailingAddress": {
+        "country": "Georgia",
+        "city": "Tbilisi",
+        "address": "esgege"
+      },
+      "physicalAddress": {
+        "country": "Georgia",
+        "city": "Tbilisi",
+        "address": "esgege"
+      },
+      "img": null,
+      "accounts": [
+        {
+          "id": 0,
+          "accNumber": "2414242421",
           "accType": "მიმდინარე",
           "valute": [
             "GEL",

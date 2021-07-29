@@ -12,3 +12,7 @@ html, body {
 body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+.p-multiselect{
+    height: 2.3rem;
+    width: 100%;
+}

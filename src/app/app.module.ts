@@ -6,18 +6,22 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { AngularFireModule } from '@angular/fire';
+import { environment } from 'src/environments/environment';
+import { AddEditResolverDirective } from './directives/add-edit-resolver.directive';
+import { ReusableCardModule } from './reusable-card/reusable-card.module';
+import { LogoutBtnModule } from './logout-btn/logout-btn.module';
+import { LoginComponent } from './login/login.component';
 
 // menu module
 import { MenubarModule } from 'primeng/menubar';
 import { TabViewModule } from 'primeng/tabview';
-import { AddEditResolverDirective } from './directives/add-edit-resolver.directive';
-import { ReusableCardModule } from './reusable-card/reusable-card.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddEditResolverDirective
+    AddEditResolverDirective,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +32,9 @@ import { ReusableCardModule } from './reusable-card/reusable-card.module';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    ReusableCardModule
+    ReusableCardModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    LogoutBtnModule
   ],
   providers: [],
   bootstrap: [AppComponent]

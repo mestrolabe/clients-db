@@ -1,8 +1,13 @@
-<p-dialog [(visible)]="display" [style]="{width: '55vw'}" [blockScroll]="true" [modal]="true">
-
+<p-dialog [(visible)]="display" [style]="{width: '55vw'}" [blockScroll]="true" [modal]="true" (onHide)="go()">
     <h1 class='font-weight-bold text-center'>{{title}}</h1>
     <form [formGroup]="addClient" (ngSubmit)="onSubmit()" class="p-4">
-        <h3 class="text-dark mt-4 mb-3">პირადი ინფორმაცია</h3>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <img [src]="'assets/imgs/clients/' + f.img.value" [alt]="client.firstName" class="rounded-circle"
+                    width="120">
+            </div>
+        </div>
+        <h3 class="text-dark mt-4 mb-3 text-center">პირადი ინფორმაცია</h3>
         <div class="row">
             <!--First Name-->
             <div class="col-md-6">
@@ -38,7 +43,7 @@
                 <label class="form-label">სქესი</label>
                 <select class="form-select"
                     [ngClass]="{'is-invalid': f.gender.errors && (f.gender.touched || f.gender.dirty), 'is-valid':f.gender.valid}"
-                    formControlName="gender" required>
+                    formControlName="gender" (change)="whichGender($any($event.target).value)" required>
                     <option selected>აირჩიეთ სქესი</option>
                     <option value="მდედრობითი">მდედრობითი</option>
                     <option value="მამრობითი">მამრობითი</option>
@@ -61,7 +66,7 @@
             </div>
         </div>
 
-        <h3 class="text-dark mt-5 mb-3">საკონტაქტო ინფორმაცია</h3>
+        <h3 class="text-dark mt-5 mb-3 text-center">საკონტაქტო ინფორმაცია</h3>
         <div class="row">
             <!--Phone Number-->
             <div class="col-7">
@@ -196,71 +201,69 @@
 
                                 <!--Account Number Validation-->
                                 <div *ngIf="AccountsSelector['controls'][i].get('accNumber')?.invalid && (AccountsSelector['controls'][i].get('accNumber')?.dirty || AccountsSelector['controls'][i].get('accNumber')?.touched)"
-                                class='invalid-feedback'>
-                                <validation-errors
-                                    [errors]="AccountsSelector['controls'][i].get('accNumber')?.errors"
-                                    errSub="ანგარიშის ნომერი">
-                                </validation-errors>
-                            </div>
+                                    class='invalid-feedback'>
+                                    <validation-errors
+                                        [errors]="AccountsSelector['controls'][i].get('accNumber')?.errors"
+                                        errSub="ანგარიშის ნომერი">
+                                    </validation-errors>
+                                </div>
                             </div>
                             <div class="col-md-6">
                                 <!--Account Type-->
                                 <label class="form-label">ანგარიშის ტიპი</label>
-                                <div class="input-group has-validation">
-                                    <select class="form-select" formControlName="accType" [ngClass]="{'is-invalid': AccountsSelector['controls'][i].get('accType')?.errors && (AccountsSelector['controls'][i].get('accType')?.touched || AccountsSelector['controls'][i].get('accType')?.dirty), 'is-valid':AccountsSelector['controls'][i].get('accType')?.valid}" required>
+                                    <select class="form-select" formControlName="accType"
+                                        [ngClass]="{'is-invalid': AccountsSelector['controls'][i].get('accType')?.errors && (AccountsSelector['controls'][i].get('accType')?.touched || AccountsSelector['controls'][i].get('accType')?.dirty), 'is-valid':AccountsSelector['controls'][i].get('accType')?.valid}"
+                                        required>
                                         <option selected>აირჩიეთ ანგარიშის ტიპი</option>
                                         <option value="მიმდინარე">მიმდინარე</option>
                                         <option value="შემნახველი">შემნახველი</option>
                                         <option value="დაგროვებითი">დაგროვებითი</option>
                                     </select>
-                                </div>
                                 <!--Account Type Validation-->
                                 <div *ngIf="AccountsSelector['controls'][i].get('accType')?.invalid && (AccountsSelector['controls'][i].get('accType')?.dirty || AccountsSelector['controls'][i].get('accType')?.touched)"
-                                class='invalid-feedback'>
-                                <validation-errors [errors]="AccountsSelector['controls'][i].get('accType')?.errors"
-                                    errSub="ანგარიშის ტიპი">
-                                </validation-errors>
-                            </div>
+                                    class='invalid-feedback'>
+                                    <validation-errors [errors]="AccountsSelector['controls'][i].get('accType')?.errors"
+                                        errSub="ანგარიშის ტიპი">
+                                    </validation-errors>
+                                </div>
                             </div>
                         </div>
                         <div class="row mt-4">
                             <div class="col-md-6">
                                 <!--Valute-->
+                                <!--
+                                  #FIXME  MultiSelect has issues on PrimeNG, Bootstrap & Angular Material, so at this moment leaving it as a single option select.
+                                -->
                                 <label class="form-label">ვალუტა</label>
-                                <div class="input-group has-validation">
-                                    <select class="form-select" formControlName="valute" multiple>
+                                    <select class="form-select" formControlName="valute"
+                                        [ngClass]="{'is-invalid': AccountsSelector['controls'][i].get('valute')?.errors && (AccountsSelector['controls'][i].get('valute')?.touched || AccountsSelector['controls'][i].get('valute')?.dirty), 'is-valid':AccountsSelector['controls'][i].get('valute')?.valid}"
+                                        required>
                                         <option value="GEL">GEL</option>
                                         <option value="USD">USD</option>
                                         <option value="EUR">EUR</option>
                                         <option value="RUB">RUB</option>
                                     </select>
-                                </div>
                                 <!--Valute Validation-->
-                                <div
-                                    *ngIf="AccountsSelector['controls'][i].get('valute')?.invalid && (AccountsSelector['controls'][i].get('valute')?.dirty || AccountsSelector['controls'][i].get('valute')?.touched)">
-                                    <span class="error-msgs"
-                                        *ngIf="AccountsSelector['controls'][i].get('valute')?.errors">
-                                        <validation-errors
-                                            [errors]="AccountsSelector['controls'][i].get('valute')?.errors"
-                                            errSub="ერთი ან რამდენიმე ვალუტა">
-                                        </validation-errors>
-                                    </span>
+                                <div *ngIf="AccountsSelector['controls'][i].get('valute')?.invalid && (AccountsSelector['controls'][i].get('valute')?.dirty || AccountsSelector['controls'][i].get('valute')?.touched)"
+                                    class="invalid-feedback">
+                                    <validation-errors [errors]="AccountsSelector['controls'][i].get('valute')?.errors"
+                                        errSub="ერთი ან რამდენიმე ვალუტა">
+                                    </validation-errors>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <!--Account Status-->
                                 <label class="form-label">ანგარიშის სტატუსი</label>
-                                <div class="input-group has-validation">
-                                    <select class="form-select" formControlName="accStatus" [ngClass]="{'is-invalid': AccountsSelector['controls'][i].get('accStatus')?.errors && (AccountsSelector['controls'][i].get('accStatus')?.touched || AccountsSelector['controls'][i].get('accStatus')?.dirty), 'is-valid':AccountsSelector['controls'][i].get('accStatus')?.valid}"
-                                    required>
+                                    <select class="form-select" formControlName="accStatus"
+                                        [ngClass]="{'is-invalid': AccountsSelector['controls'][i].get('accStatus')?.errors && (AccountsSelector['controls'][i].get('accStatus')?.touched || AccountsSelector['controls'][i].get('accStatus')?.dirty), 'is-valid':AccountsSelector['controls'][i].get('accStatus')?.valid}"
+                                        required>
                                         <option selected>ანგარიშის სტატუსი</option>
                                         <option value="აქტიური">აქტიური</option>
                                         <option value="დახურული">დახურული</option>
                                     </select>
-                                </div>
                                 <!--Account Status Validation-->
                                 <div *ngIf="AccountsSelector['controls'][i].get('accStatus')?.invalid && (AccountsSelector['controls'][i].get('accStatus')?.dirty || AccountsSelector['controls'][i].get('accStatus')?.touched)"
-                                    class='invalid-feedback'>
+                                    class="invalid-feedback">
                                     <validation-errors
                                         [errors]="AccountsSelector['controls'][i].get('accStatus')?.errors"
                                         errSub="ანგარიშის სტატუსი">
@@ -278,3 +281,4 @@
         </div>
     </form>
 </p-dialog>
+<logout-btn></logout-btn>

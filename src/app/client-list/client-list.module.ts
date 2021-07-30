@@ -12,10 +12,11 @@ import {InputTextModule} from 'primeng/inputtext';
 import {MultiSelectModule} from 'primeng/multiselect';
 import {DialogModule} from 'primeng/dialog';
 import {PaginatorModule} from 'primeng/paginator';
+import { LogoutBtnModule } from '../logout-btn/logout-btn.module';
 
 @NgModule({
   declarations: [
-    ClientListComponent
+    ClientListComponent,
   ],
   imports: [
     CommonModule,
@@ -26,7 +27,8 @@ import {PaginatorModule} from 'primeng/paginator';
     InputTextModule,
     MultiSelectModule,
     DialogModule,
-    PaginatorModule
+    PaginatorModule,
+    LogoutBtnModule
   ],
   exports: [
     ClientListComponent

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "clients-database-auth": {
+      "hosting": {
+        "client-database": [
+          "clients-database-auth"
+        ]
+      }
+    }
+  }
+}

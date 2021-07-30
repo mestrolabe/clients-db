@@ -35,10 +35,10 @@ export class AddEditComponent implements OnInit {
 
 
   valutes = [
-    {name: 'GEL', value: 'GEL'},
-    {name: 'USD', value: 'USD'},
-    {name: 'EUR', value: 'EUR'},
-    {name: 'RUB', value: 'RUB'}
+    { name: 'GEL', value: 'GEL' },
+    { name: 'USD', value: 'USD' },
+    { name: 'EUR', value: 'EUR' },
+    { name: 'RUB', value: 'RUB' }
   ]
 
   ngOnInit(): void {
@@ -75,7 +75,7 @@ export class AddEditComponent implements OnInit {
         city: ['', Validators.required],
         address: ['', Validators.required]
       }),
-      img: [],
+      img: '',
       accounts: this.fb.array([
         this.addAccount()
       ])
@@ -88,6 +88,7 @@ export class AddEditComponent implements OnInit {
         this.getClient(id);
       }
     )
+
   }
   ngOnDestroy(): void {
     this.sub.unsubscribe();
@@ -133,6 +134,19 @@ export class AddEditComponent implements OnInit {
     }
   }
 
+  // Patch picture based on gender
+  whichGender(genderValue: any) {
+    if(genderValue == "მდედრობითი"){
+      this.addClient.patchValue({
+        img: 'woman.png'
+      })
+    }
+    else if(genderValue == "მამრობითი"){
+      this.addClient.patchValue({
+        img: 'man.png'
+      })
+    }
+  }
 
   // Add or Edit, title changes and patching values
   outputClient(client: IClient): void {
@@ -184,7 +198,7 @@ export class AddEditComponent implements OnInit {
         else {
           this.crud.updateClient(cl)
             .subscribe({
-              next: () => this.onSaveComplete(),
+              next: () => this.onEditComplete(),
               error: err => this.errorMsg = err
             });
         }
@@ -197,7 +211,13 @@ export class AddEditComponent implements OnInit {
 
   // Navigate to the client list
   onSaveComplete(): void {
-    this.router.navigate(['/client-list']);
+    window.location.reload();
+  }
+  onEditComplete(): void {
+    this.router.navigate(['../']);
+  }
+  go() {
+    this.router.navigate(['../']);
   }
 
 
@@ -238,6 +258,4 @@ export class AddEditComponent implements OnInit {
     this.AccountsSelector.markAsDirty();
     this.AccountsSelector.markAsTouched();
   }
-
-
 }

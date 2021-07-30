@@ -32,7 +32,7 @@ export class ClientCrudService {
         city: null as any,
         address: null as any
       },
-      img: 'woman.png',
+      img: 'anonymous.png',
       accounts: [{
         accNumber: null as any,
         accType: null as any,

@@ -7,6 +7,7 @@ import { ReusableCardModule } from '../reusable-card/reusable-card.module';
 
 
 import {ButtonModule} from 'primeng/button';
+import { LogoutBtnModule } from '../logout-btn/logout-btn.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {ButtonModule} from 'primeng/button';
     CommonModule,
     ClientDetailsRoutingModule,
     ButtonModule,
-    ReusableCardModule
+    ReusableCardModule,
+    LogoutBtnModule
   ],
   exports: [
     ClientDetailsComponent

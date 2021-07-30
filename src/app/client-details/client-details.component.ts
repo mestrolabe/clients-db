@@ -24,11 +24,16 @@ export class ClientDetailsComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    /*
     const param = this.route.snapshot.paramMap.get('id');
     if (param) {
       const id = +param;
       this.getClient(id);
     }
+    */
+   this.route.data.subscribe((data: any)=> {
+     this.client = data.client;
+   })
   }
 
     /* ------------------------ Functions ----------------------------*/

@@ -16,3 +16,6 @@ body {
     height: 2.3rem;
     width: 100%;
 }
+.p-datatable .p-datatable-header {
+    background-color: white !important;
+}

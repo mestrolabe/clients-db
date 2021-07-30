@@ -7,6 +7,7 @@ import { ValidationErrorsComponent } from '../validation-errors/validation-error
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import {DynamicDialogModule} from 'primeng/dynamicdialog';
+import { LogoutBtnModule } from '../logout-btn/logout-btn.module';
 
 // PrimeNG Modules
 import {DialogModule} from 'primeng/dialog';
@@ -30,10 +31,13 @@ import {SelectButtonModule} from 'primeng/selectbutton';
     ReactiveFormsModule,
     ButtonModule,
     MultiSelectModule,
-    SelectButtonModule
+    SelectButtonModule,
+    LogoutBtnModule
   ],
   exports: [
     AddEditComponent
+  ],
+  providers: [
   ]
 })
 export class AddEditModule { }

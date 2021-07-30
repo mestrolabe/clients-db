@@ -3,7 +3,8 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.11.
 
 ## Introduction
-Client database built with Angular, implementing CRUD services with the help of JSON Server and authentication services using Firebase.
+Client database built with Angular, implementing CRUD services with the help of JSON Server and authentication services using Firebase.  
+**Live: https://mestrolabe.github.io/clients-db** *(note: JSON Server doesn't work on Github static pages)*
 
 **To access the application, you have to log with these details:**  
 **email:** someone@example.com  

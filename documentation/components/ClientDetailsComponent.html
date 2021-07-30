@@ -1,0 +1,893 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>client-database documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">client-database documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  ClientDetailsComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/client-details/client-details.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-client-details</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./client-details.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./client-details.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#client" >client</a>
+                            </li>
+                            <li>
+                                <a href="#display" >display</a>
+                            </li>
+                            <li>
+                                <a href="#errorMsg" >errorMsg</a>
+                            </li>
+                            <li>
+                                <a href="#sub" >sub</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#deleteClient" >deleteClient</a>
+                            </li>
+                            <li>
+                                <a href="#getClient" >getClient</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onSaveComplete" >onSaveComplete</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(crud: <a href="../injectables/ClientCrudService.html" target="_self">ClientCrudService</a>, route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/client-details/client-details.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>crud</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ClientCrudService.html" target="_self" >ClientCrudService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteClient"></a>
+                    <span class="name">
+                        <span ><b>deleteClient</b></span>
+                        <a href="#deleteClient"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteClient()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="50"
+                            class="link-to-prism">src/app/client-details/client-details.component.ts:50</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getClient"></a>
+                    <span class="name">
+                        <span ><b>getClient</b></span>
+                        <a href="#getClient"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getClient(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="42"
+                            class="link-to-prism">src/app/client-details/client-details.component.ts:42</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="26"
+                            class="link-to-prism">src/app/client-details/client-details.component.ts:26</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSaveComplete"></a>
+                    <span class="name">
+                        <span ><b>onSaveComplete</b></span>
+                        <a href="#onSaveComplete"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onSaveComplete()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="65"
+                            class="link-to-prism">src/app/client-details/client-details.component.ts:65</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="client"></a>
+                    <span class="name">
+                        <span ><b>client</b></span>
+                        <a href="#client"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IClient.html" target="_self" >IClient</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/client-details/client-details.component.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="display"></a>
+                    <span class="name">
+                        <span ><b>display</b></span>
+                        <a href="#display"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/client-details/client-details.component.ts:13</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="errorMsg"></a>
+                    <span class="name">
+                        <span ><b>errorMsg</b></span>
+                        <a href="#errorMsg"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/client-details/client-details.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sub"></a>
+                    <span class="name">
+                        <span ><b>sub</b></span>
+                        <a href="#sub"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/client-details/client-details.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { ActivatedRoute, Router } from &#x27;@angular/router&#x27;;
+import { Subscription } from &#x27;rxjs&#x27;;
+import { IClient } from &#x27;../shared/models/client&#x27;;
+import { ClientCrudService } from &#x27;../shared/services/client-crud.service&#x27;;
+
+@Component({
+  selector: &#x27;app-client-details&#x27;,
+  templateUrl: &#x27;./client-details.component.html&#x27;,
+  styleUrls: [&#x27;./client-details.component.css&#x27;]
+})
+export class ClientDetailsComponent implements OnInit {
+  display: boolean &#x3D; true; //for modal dialog box
+  client!: IClient;
+
+  errorMsg &#x3D; &#x27;&#x27;;
+  sub!: Subscription;
+
+  
+  constructor(
+    private crud: ClientCrudService,
+    private route: ActivatedRoute,
+    private router: Router
+  ) { }
+
+  ngOnInit(): void {
+    /*
+    const param &#x3D; this.route.snapshot.paramMap.get(&#x27;id&#x27;);
+    if (param) {
+      const id &#x3D; +param;
+      this.getClient(id);
+    }
+    */
+   this.route.data.subscribe((data: any)&#x3D;&gt; {
+     this.client &#x3D; data.client;
+   })
+  }
+
+    /* ------------------------ Functions ----------------------------*/
+
+    // Get client by id
+    getClient(id: number): void {
+      this.crud.getClient(id).subscribe({
+        next: client &#x3D;&gt; this.client &#x3D; client,
+        error: err &#x3D;&gt; this.errorMsg &#x3D; err
+      })
+    }
+
+    // Delete client by id
+    deleteClient(): void {
+      if (this.client.id &#x3D;&#x3D;&#x3D; 0) {
+        this.onSaveComplete();
+      }
+      else {
+        if (confirm(&#x60;ნამდვილად გსურთ ${this.client.firstName} ${this.client.lastName}ს მონაცემების წაშლა?&#x60;)) {
+          this.crud.deleteClient(this.client.id).subscribe({
+            next: () &#x3D;&gt; this.onSaveComplete(),
+            error: err &#x3D;&gt; this.errorMsg &#x3D; err
+          })
+        }
+      }
+    }
+
+    // Navigate back to list
+    onSaveComplete(): void {
+      this.router.navigate([&#x27;/client-list&#x27;]);
+    }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;container&quot;&gt;
+    &lt;div class&#x3D;&quot;main-body&quot;&gt;
+      &lt;div class&#x3D;&quot;row mb-5&quot;&gt;
+        &lt;div class&#x3D;&quot;col-12 d-flex justify-content-end&quot;&gt;
+          &lt;p-button label&#x3D;&quot;რედაქტირება&quot; icon&#x3D;&quot;pi pi-pencil&quot; styleClass&#x3D;&quot;p-button-md p-button-outlined mx-2&quot; [routerLink]&#x3D;&quot;[&#x27;/client-list&#x27;, client.id, &#x27;client&#x27;]&quot;&gt;&lt;/p-button&gt;
+          &lt;p-button label&#x3D;&quot;კლიენტის წაშლა&quot; icon&#x3D;&quot;pi pi-trash&quot; styleClass&#x3D;&quot;p-button-md p-button-outlined p-button-danger&quot; (click)&#x3D;&quot;deleteClient()&quot;&gt;&lt;/p-button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row gutters-sm&quot;&gt;
+        &lt;!--profile card--&gt;
+        &lt;div class&#x3D;&quot;col-md-4 mb-3&quot;&gt;
+          &lt;div class&#x3D;&quot;card&quot;&gt;
+            &lt;div class&#x3D;&quot;card-body&quot;&gt;
+              &lt;div class&#x3D;&quot;d-flex flex-column align-items-center text-center&quot;&gt;
+                &lt;img [src]&#x3D;&quot;&#x27;assets/imgs/clients/&#x27; + client.img&quot; [alt]&#x3D;&quot;client.firstName&quot; class&#x3D;&quot;rounded-circle&quot;
+                  width&#x3D;&quot;180&quot;&gt;
+                &lt;div class&#x3D;&quot;mt-3&quot;&gt;
+                  &lt;h4&gt;{{client.firstName}} {{client.lastName}}&lt;/h4&gt;
+                  &lt;p class&#x3D;&quot;text-secondary mb-1&quot;&gt;#{{client.id}}&lt;/p&gt;
+                  &lt;p class&#x3D;&quot;text-secondary mb-1&quot;&gt;{{client.gender}}&lt;/p&gt;
+                  &lt;p class&#x3D;&quot;text-muted font-size-sm&quot;&gt;&lt;i class&#x3D;&quot;pi pi-id-card&quot;&gt;&lt;/i&gt;
+                    {{client.idNumber}}&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-md-8&quot;&gt;
+          &lt;div class&#x3D;&quot;card mb-3&quot;&gt;
+            &lt;div class&#x3D;&quot;card-body&quot;&gt;
+              &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                  &lt;h6 class&#x3D;&quot;mb-0&quot;&gt;ტელეფონი&lt;/h6&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;col-sm-9 text-secondary&quot;&gt;
+                  {{client.phoneNumber}}
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;hr&gt;
+              &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                  &lt;h6 class&#x3D;&quot;mb-0&quot;&gt;იურიდიული მისამართი&lt;/h6&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;col-sm-9 text-secondary&quot;&gt;
+                  &lt;p&gt;
+                    &lt;strong&gt;ქვეყანა&lt;/strong&gt;: {{client.mailingAddress.country}}
+                  &lt;/p&gt;
+                  &lt;p&gt;
+                    &lt;strong&gt;ქალაქი&lt;/strong&gt;: {{client.mailingAddress.city}}
+                  &lt;/p&gt;
+                  &lt;p&gt;
+                    &lt;strong&gt;მისამართი&lt;/strong&gt;: {{client.mailingAddress.address}}
+                  &lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;hr&gt;
+              &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                  &lt;h6 class&#x3D;&quot;mb-0&quot;&gt;ფაქტიური მისამართი&lt;/h6&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;col-sm-9 text-secondary&quot;&gt;
+                  &lt;p&gt;
+                    &lt;strong&gt;ქვეყანა&lt;/strong&gt;: {{client.physicalAddress.country}}
+                  &lt;/p&gt;
+                  &lt;p&gt;
+                    &lt;strong&gt;ქალაქი&lt;/strong&gt;: {{client.physicalAddress.city}}
+                  &lt;/p&gt;
+                  &lt;p&gt;
+                    &lt;strong&gt;მისამართი&lt;/strong&gt;: {{client.physicalAddress.address}}
+                  &lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row gutters-sm mt-5&quot;&gt;
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+          &lt;div class&#x3D;&quot;col-md-6 mb-3 mt-3&quot;&gt;
+            &lt;h1&gt;ანგარიშები&lt;/h1&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!--profile card--&gt;
+  
+        &lt;div class&#x3D;&quot;col-md-6 mb-3 mt-3&quot; *ngFor&#x3D;&quot;let acc of client.accounts&quot;&gt;
+          &lt;reusable-card [account]&#x3D;&quot;acc&quot;&gt;&lt;/reusable-card&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+  
+    &lt;/div&gt;
+    &lt;logout-btn&gt;&lt;/logout-btn&gt;
+  &lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./client-details.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">body{
+    margin-top:20px;
+    color: #1a202c;
+    text-align: left;
+    background-color: #e2e8f0;    
+}
+.main-body {
+    padding: 15px;
+    font-family:  -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;
+}
+.card {
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1rem;
+}
+
+.gutters-sm {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.gutters-sm&gt;.col, .gutters-sm&gt;[class*&#x3D;col-] {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.mb-3, .my-3 {
+    margin-bottom: 1rem!important;
+}
+
+.bg-gray-300 {
+    background-color: #e2e8f0;
+}
+.h-100 {
+    height: 100%!important;
+}
+.shadow-none {
+    box-shadow: none!important;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="container">    <div class="main-body">      <div class="row mb-5">        <div class="col-12 d-flex justify-content-end">          <p-button label="რედაქტირება" icon="pi pi-pencil" styleClass="p-button-md p-button-outlined mx-2" [routerLink]="[\'/client-list\', client.id, \'client\']"></p-button>          <p-button label="კლიენტის წაშლა" icon="pi pi-trash" styleClass="p-button-md p-button-outlined p-button-danger" (click)="deleteClient()"></p-button>        </div>      </div>      <div class="row gutters-sm">        <!--profile card-->        <div class="col-md-4 mb-3">          <div class="card">            <div class="card-body">              <div class="d-flex flex-column align-items-center text-center">                <img [src]="\'assets/imgs/clients/\' + client.img" [alt]="client.firstName" class="rounded-circle"                  width="180">                <div class="mt-3">                  <h4>{{client.firstName}} {{client.lastName}}</h4>                  <p class="text-secondary mb-1">#{{client.id}}</p>                  <p class="text-secondary mb-1">{{client.gender}}</p>                  <p class="text-muted font-size-sm"><i class="pi pi-id-card"></i>                    {{client.idNumber}}</p>                </div>              </div>            </div>          </div>        </div>        <div class="col-md-8">          <div class="card mb-3">            <div class="card-body">              <div class="row">                <div class="col-sm-3">                  <h6 class="mb-0">ტელეფონი</h6>                </div>                <div class="col-sm-9 text-secondary">                  {{client.phoneNumber}}                </div>              </div>              <hr>              <div class="row">                <div class="col-sm-3">                  <h6 class="mb-0">იურიდიული მისამართი</h6>                </div>                <div class="col-sm-9 text-secondary">                  <p>                    <strong>ქვეყანა</strong>: {{client.mailingAddress.country}}                  </p>                  <p>                    <strong>ქალაქი</strong>: {{client.mailingAddress.city}}                  </p>                  <p>                    <strong>მისამართი</strong>: {{client.mailingAddress.address}}                  </p>                </div>              </div>              <hr>              <div class="row">                <div class="col-sm-3">                  <h6 class="mb-0">ფაქტიური მისამართი</h6>                </div>                <div class="col-sm-9 text-secondary">                  <p>                    <strong>ქვეყანა</strong>: {{client.physicalAddress.country}}                  </p>                  <p>                    <strong>ქალაქი</strong>: {{client.physicalAddress.city}}                  </p>                  <p>                    <strong>მისამართი</strong>: {{client.physicalAddress.address}}                  </p>                </div>              </div>            </div>          </div>        </div>      </div>      <div class="row gutters-sm mt-5">        <div class="row">          <div class="col-md-6 mb-3 mt-3">            <h1>ანგარიშები</h1>          </div>        </div>        <!--profile card-->          <div class="col-md-6 mb-3 mt-3" *ngFor="let acc of client.accounts">          <reusable-card [account]="acc"></reusable-card>        </div>      </div>      </div>    <logout-btn></logout-btn>  </div></div>'
+    var COMPONENTS = [{'name': 'AddEditComponent', 'selector': 'app-add-edit'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ClientDetailsComponent', 'selector': 'app-client-details'},{'name': 'ClientListComponent', 'selector': 'app-client-list'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LogoutBtnComponent', 'selector': 'logout-btn'},{'name': 'ReusableCardComponent', 'selector': 'reusable-card'},{'name': 'ValidationErrorsComponent', 'selector': 'validation-errors'}];
+    var DIRECTIVES = [{'name': 'AddEditResolverDirective', 'selector': '[appAddEditResolver]'}];
+    var ACTUAL_COMPONENT = {'name': 'ClientDetailsComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ClientDetailsComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       
+       <script type="module" src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

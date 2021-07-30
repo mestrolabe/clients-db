@@ -1,0 +1,2071 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>client-database documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">client-database documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  AddEditComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/add-edit/add-edit.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">providers</td>
+                <td class="col-md-9">
+                            <code>DialogService</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-add-edit</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./add-edit.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./add-edit.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addClient" >addClient</a>
+                            </li>
+                            <li>
+                                <a href="#client" >client</a>
+                            </li>
+                            <li>
+                                <a href="#disabled" >disabled</a>
+                            </li>
+                            <li>
+                                <a href="#display" >display</a>
+                            </li>
+                            <li>
+                                <a href="#errorMsg" >errorMsg</a>
+                            </li>
+                            <li>
+                                <a href="#sameAddress" >sameAddress</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#sub" >sub</a>
+                            </li>
+                            <li>
+                                <a href="#title" >title</a>
+                            </li>
+                            <li>
+                                <a href="#valutes" >valutes</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addAccount" >addAccount</a>
+                            </li>
+                            <li>
+                                <a href="#addAccountButton" >addAccountButton</a>
+                            </li>
+                            <li>
+                                <a href="#deleteAccount" >deleteAccount</a>
+                            </li>
+                            <li>
+                                <a href="#getClient" >getClient</a>
+                            </li>
+                            <li>
+                                <a href="#go" >go</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onEditComplete" >onEditComplete</a>
+                            </li>
+                            <li>
+                                <a href="#onSaveComplete" >onSaveComplete</a>
+                            </li>
+                            <li>
+                                <a href="#onSubmit" >onSubmit</a>
+                            </li>
+                            <li>
+                                <a href="#outputClient" >outputClient</a>
+                            </li>
+                            <li>
+                                <a href="#sameAdd" >sameAdd</a>
+                            </li>
+                            <li>
+                                <a href="#setExistingAccounts" >setExistingAccounts</a>
+                            </li>
+                            <li>
+                                <a href="#whichGender" >whichGender</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#Physical" >Physical</a>
+                                </li>
+                                <li>
+                                    <a href="#Mailing" >Mailing</a>
+                                </li>
+                                <li>
+                                    <a href="#AccountsSelector" >AccountsSelector</a>
+                                </li>
+                                <li>
+                                    <a href="#f" >f</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(crud: <a href="../injectables/ClientCrudService.html" target="_self">ClientCrudService</a>, fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/add-edit/add-edit.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>crud</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ClientCrudService.html" target="_self" >ClientCrudService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addAccount"></a>
+                    <span class="name">
+                        <span ><b>addAccount</b></span>
+                        <a href="#addAccount"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addAccount()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="241"
+                            class="link-to-prism">src/app/add-edit/add-edit.component.ts:241</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addAccountButton"></a>
+                    <span class="name">
+                        <span ><b>addAccountButton</b></span>
+                        <a href="#addAccountButton"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addAccountButton()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="251"
+                            class="link-to-prism">src/app/add-edit/add-edit.component.ts:251</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteAccount"></a>
+                    <span class="name">
+                        <span ><b>deleteAccount</b></span>
+                        <a href="#deleteAccount"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteAccount(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="256"
+                            class="link-to-prism">src/app/add-edit/add-edit.component.ts:256</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getClient"></a>
+                    <span class="name">
+                        <span ><b>getClient</b></span>
+                        <a href="#getClient"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getClient(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="115"
+                            class="link-to-prism">src/app/add-edit/add-edit.component.ts:115</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="go"></a>
+                    <span class="name">
+                        <span ><b>go</b></span>
+                        <a href="#go"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>go()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="219"
+                            class="link-to-prism">src/app/add-edit/add-edit.component.ts:219</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="93"
+                            class="link-to-prism">src/app/add-edit/add-edit.component.ts:93</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="44"
+                            class="link-to-prism">src/app/add-edit/add-edit.component.ts:44</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onEditComplete"></a>
+                    <span class="name">
+                        <span ><b>onEditComplete</b></span>
+                        <a href="#onEditComplete"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onEditComplete()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="216"
+                            class="link-to-prism">src/app/add-edit/add-edit.component.ts:216</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSaveComplete"></a>
+                    <span class="name">
+                        <span ><b>onSaveComplete</b></span>
+                        <a href="#onSaveComplete"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onSaveComplete()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="213"
+                            class="link-to-prism">src/app/add-edit/add-edit.component.ts:213</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSubmit"></a>
+                    <span class="name">
+                        <span ><b>onSubmit</b></span>
+                        <a href="#onSubmit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onSubmit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="187"
+                            class="link-to-prism">src/app/add-edit/add-edit.component.ts:187</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="outputClient"></a>
+                    <span class="name">
+                        <span ><b>outputClient</b></span>
+                        <a href="#outputClient"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>outputClient(client: <a href="../interfaces/IClient.html" target="_self">IClient</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="152"
+                            class="link-to-prism">src/app/add-edit/add-edit.component.ts:152</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>client</td>
+                                    <td>
+                                                <code><a href="../interfaces/IClient.html" target="_self" >IClient</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sameAdd"></a>
+                    <span class="name">
+                        <span ><b>sameAdd</b></span>
+                        <a href="#sameAdd"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>sameAdd(same: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="124"
+                            class="link-to-prism">src/app/add-edit/add-edit.component.ts:124</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>same</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setExistingAccounts"></a>
+                    <span class="name">
+                        <span ><b>setExistingAccounts</b></span>
+                        <a href="#setExistingAccounts"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setExistingAccounts(accs: IClientAcc[] | undefined)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="227"
+                            class="link-to-prism">src/app/add-edit/add-edit.component.ts:227</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>accs</td>
+                                    <td>
+                                            <code>IClientAcc[] | undefined</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://angular.io/api/forms/FormArray" target="_blank" >FormArray</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="whichGender"></a>
+                    <span class="name">
+                        <span ><b>whichGender</b></span>
+                        <a href="#whichGender"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>whichGender(genderValue: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="138"
+                            class="link-to-prism">src/app/add-edit/add-edit.component.ts:138</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>genderValue</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addClient"></a>
+                    <span class="name">
+                        <span ><b>addClient</b></span>
+                        <a href="#addClient"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/add-edit/add-edit.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="client"></a>
+                    <span class="name">
+                        <span ><b>client</b></span>
+                        <a href="#client"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IClient.html" target="_self" >IClient</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/add-edit/add-edit.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="disabled"></a>
+                    <span class="name">
+                        <span ><b>disabled</b></span>
+                        <a href="#disabled"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/add-edit/add-edit.component.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="display"></a>
+                    <span class="name">
+                        <span ><b>display</b></span>
+                        <a href="#display"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/add-edit/add-edit.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="errorMsg"></a>
+                    <span class="name">
+                        <span ><b>errorMsg</b></span>
+                        <a href="#errorMsg"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/add-edit/add-edit.component.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sameAddress"></a>
+                    <span class="name">
+                        <span ><b>sameAddress</b></span>
+                        <a href="#sameAddress"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/add-edit/add-edit.component.ts:20</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sub"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>sub</b></span>
+                        <a href="#sub"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/add-edit/add-edit.component.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="title"></a>
+                    <span class="name">
+                        <span ><b>title</b></span>
+                        <a href="#title"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/add-edit/add-edit.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="valutes"></a>
+                    <span class="name">
+                        <span ><b>valutes</b></span>
+                        <a href="#valutes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+    { name: &#x27;GEL&#x27;, value: &#x27;GEL&#x27; },
+    { name: &#x27;USD&#x27;, value: &#x27;USD&#x27; },
+    { name: &#x27;EUR&#x27;, value: &#x27;EUR&#x27; },
+    { name: &#x27;RUB&#x27;, value: &#x27;RUB&#x27; }
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/add-edit/add-edit.component.ts:37</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="Physical"></a>
+                        <span class="name"><b>Physical</b><a href="#Physical"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>Physical()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="99" class="link-to-prism">src/app/add-edit/add-edit.component.ts:99</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="Mailing"></a>
+                        <span class="name"><b>Mailing</b><a href="#Mailing"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>Mailing()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="102" class="link-to-prism">src/app/add-edit/add-edit.component.ts:102</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="AccountsSelector"></a>
+                        <span class="name"><b>AccountsSelector</b><a href="#AccountsSelector"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>AccountsSelector()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="105" class="link-to-prism">src/app/add-edit/add-edit.component.ts:105</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="f"></a>
+                        <span class="name"><b>f</b><a href="#f"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>f()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="108" class="link-to-prism">src/app/add-edit/add-edit.component.ts:108</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { FormArray, FormBuilder, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
+import { ActivatedRoute, Router } from &#x27;@angular/router&#x27;;
+import { DialogService } from &#x27;primeng/dynamicdialog&#x27;;
+import { Subscription } from &#x27;rxjs&#x27;;
+import { IClient } from &#x27;../shared/models/client&#x27;;
+import { IClientAcc } from &#x27;../shared/models/client-account&#x27;;
+import { ClientCrudService } from &#x27;../shared/services/client-crud.service&#x27;;
+
+@Component({
+  selector: &#x27;app-add-edit&#x27;,
+  templateUrl: &#x27;./add-edit.component.html&#x27;,
+  styleUrls: [&#x27;./add-edit.component.css&#x27;],
+  providers: [DialogService]
+})
+export class AddEditComponent implements OnInit {
+  title &#x3D; &#x27;&#x27;;
+  client!: IClient;
+  addClient!: FormGroup;
+  sameAddress &#x3D; false;
+
+  display: boolean &#x3D; true; //for modal dialog box
+  disabled &#x3D; false; //submitting form param
+
+  // CRUD Variables
+  private sub!: Subscription;
+  errorMsg!: string;
+
+  constructor(
+    private crud: ClientCrudService,
+    private fb: FormBuilder,
+    private route: ActivatedRoute,
+    private router: Router
+  ) { }
+
+
+  valutes &#x3D; [
+    { name: &#x27;GEL&#x27;, value: &#x27;GEL&#x27; },
+    { name: &#x27;USD&#x27;, value: &#x27;USD&#x27; },
+    { name: &#x27;EUR&#x27;, value: &#x27;EUR&#x27; },
+    { name: &#x27;RUB&#x27;, value: &#x27;RUB&#x27; }
+  ]
+
+  ngOnInit(): void {
+    // Form Initialization
+    this.addClient &#x3D; this.fb.group({
+      firstName: [&#x27;&#x27;,
+        [Validators.required,
+        Validators.minLength(2),
+        Validators.maxLength(50),
+        Validators.pattern(&#x27;([a-zA-Z]+|[\\u10D0-\\u10F0]+)&#x27;)]],
+      lastName: [&#x27;&#x27;,
+        [Validators.required,
+        Validators.minLength(2),
+        Validators.maxLength(50),
+        Validators.pattern(&#x27;([a-zA-Z]+|[\\u10D0-\\u10F0]+)&#x27;)]],
+      gender: [&#x27;&#x27;, Validators.required],
+      idNumber: [&#x27;&#x27;,
+        [Validators.required,
+        Validators.minLength(11),
+        Validators.maxLength(11),
+        Validators.pattern(&#x27;^[0-9]*$&#x27;)]],
+      phoneNumber: [&#x27;&#x27;,
+        [Validators.required,
+        Validators.minLength(9),
+        Validators.maxLength(9),
+        Validators.pattern(&#x27;5.*&#x27;)]],
+      physicalAddress: this.fb.group({
+        country: [&#x27;&#x27;, Validators.required],
+        city: [&#x27;&#x27;, Validators.required],
+        address: [&#x27;&#x27;, Validators.required]
+      }),
+      mailingAddress: this.fb.group({
+        country: [&#x27;&#x27;, Validators.required],
+        city: [&#x27;&#x27;, Validators.required],
+        address: [&#x27;&#x27;, Validators.required]
+      }),
+      img: &#x27;&#x27;,
+      accounts: this.fb.array([
+        this.addAccount()
+      ])
+    });
+
+    this.addClient.valueChanges.subscribe(console.log); //printing data to console, remove later
+    this.sub &#x3D; this.route.paramMap.subscribe(
+      params &#x3D;&gt; {
+        const id &#x3D; +params.get(&#x27;id&#x27;)!;
+        this.getClient(id);
+      }
+    )
+
+  }
+  ngOnDestroy(): void {
+    this.sub.unsubscribe();
+  }
+
+
+  /* ------------------------ Getters ----------------------------*/
+  get Physical() {
+    return (this.addClient.controls.physicalAddress as FormGroup).controls;
+  }
+  get Mailing() {
+    return (this.addClient.controls.mailingAddress as FormGroup).controls;
+  }
+  get AccountsSelector() {
+    return this.addClient.get(&#x27;accounts&#x27;) as FormArray;
+  }
+  get f() {
+    return this.addClient.controls;
+  }
+
+
+  /* ------------------------ Client Functions ----------------------------*/
+  // Get single client
+  getClient(id: number): void {
+    this.crud.getClient(id).subscribe({
+      next: (client: IClient) &#x3D;&gt; this.outputClient(client),
+      error: err &#x3D;&gt; this.errorMsg &#x3D; err
+    })
+  }
+
+
+  // Check if mailing &amp; physical addresses are the same
+  sameAdd(same: boolean) {
+    this.sameAddress &#x3D; same;
+    if (this.sameAddress) {
+      this.addClient.patchValue({
+        physicalAddress: {
+          country: this.Mailing.country.value,
+          city: this.Mailing.city.value,
+          address: this.Mailing.address.value
+        }
+      });
+    }
+  }
+
+  // Patch picture based on gender
+  whichGender(genderValue: any) {
+    if(genderValue &#x3D;&#x3D; &quot;მდედრობითი&quot;){
+      this.addClient.patchValue({
+        img: &#x27;woman.png&#x27;
+      })
+    }
+    else if(genderValue &#x3D;&#x3D; &quot;მამრობითი&quot;){
+      this.addClient.patchValue({
+        img: &#x27;man.png&#x27;
+      })
+    }
+  }
+
+  // Add or Edit, title changes and patching values
+  outputClient(client: IClient): void {
+    if (this.addClient) {
+      this.addClient.reset();
+    }
+    this.client &#x3D; client;
+    if (this.client.id &#x3D;&#x3D;&#x3D; 0) {
+      this.title &#x3D; &#x27;ახალი კლიენტის დამატება&#x27;;
+    }
+    else {
+      this.title &#x3D; &#x60;კლიენტი: ${this.client.firstName} ${this.client.lastName} - მონაცემების ცვლილება&#x60;;
+    }
+
+    // In case of editing, patch existing values on the form
+    this.addClient.patchValue({
+      firstName: this.client.firstName,
+      lastName: this.client.lastName,
+      gender: this.client.gender,
+      idNumber: this.client.idNumber,
+      phoneNumber: this.client.phoneNumber,
+      physicalAddress: {
+        country: this.client.physicalAddress.country,
+        city: this.client.physicalAddress.city,
+        address: this.client.physicalAddress.address
+      },
+      mailingAddress: {
+        country: this.client.mailingAddress.country,
+        city: this.client.mailingAddress.city,
+        address: this.client.mailingAddress.address
+      },
+      img: this.client.img
+    });
+    this.addClient.setControl(&#x27;accounts&#x27;, this.setExistingAccounts(client.accounts));
+  }
+
+  // Save the client
+  onSubmit(): void {
+    if (this.addClient.valid) {
+      if (this.addClient.dirty) {
+        const cl &#x3D; { ...this.client, ...this.addClient.value };
+
+        if (cl.id &#x3D;&#x3D;&#x3D; 0) {
+          this.crud.createClient(cl).subscribe({
+            next: () &#x3D;&gt; this.onSaveComplete(),
+            error: err &#x3D;&gt; this.errorMsg &#x3D; err
+          });
+        }
+        else {
+          this.crud.updateClient(cl)
+            .subscribe({
+              next: () &#x3D;&gt; this.onEditComplete(),
+              error: err &#x3D;&gt; this.errorMsg &#x3D; err
+            });
+        }
+      }
+      else {
+        this.errorMsg &#x3D; &#x27;შეამოწმეთ ინფუთის ველები და მათ ქვეშ განთავსებული ვალიდაციის შეცდომები.&#x27;;
+      }
+    }
+  }
+
+  // Navigate to the client list
+  onSaveComplete(): void {
+    window.location.reload();
+  }
+  onEditComplete(): void {
+    this.router.navigate([&#x27;../&#x27;]);
+  }
+  go() {
+    this.router.navigate([&#x27;../&#x27;]);
+  }
+
+
+  /* ------------------------ Account Functions ----------------------------*/
+
+  // Patching existing details
+  setExistingAccounts(accs: IClientAcc[] | undefined): FormArray {
+    const fa &#x3D; new FormArray([]);
+    accs?.forEach(a &#x3D;&gt; {
+      fa.push(this.fb.group({
+        accNumber: a.accNumber,
+        accType: a.accType,
+        valute: a.valute,
+        accStatus: a.accStatus
+      }));
+    });
+    return fa;
+  }
+
+  // Create new form inputs
+  addAccount(): FormGroup {
+    return this.fb.group({
+      accNumber: [null, Validators.required],
+      accType: [&#x27;&#x27;, Validators.required],
+      valute: [[], Validators.required],
+      accStatus: [&#x27;&#x27;, Validators.required]
+    })
+  }
+
+  // Button for creating new form inputs
+  addAccountButton(): void {
+    this.AccountsSelector.push(this.addAccount());
+  }
+
+  // Button for deleting new form inputs
+  deleteAccount(index: number) {
+    this.AccountsSelector.removeAt(index);
+    this.AccountsSelector.markAsDirty();
+    this.AccountsSelector.markAsTouched();
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;p-dialog [(visible)]&#x3D;&quot;display&quot; [style]&#x3D;&quot;{width: &#x27;55vw&#x27;}&quot; [blockScroll]&#x3D;&quot;true&quot; [modal]&#x3D;&quot;true&quot; (onHide)&#x3D;&quot;go()&quot;&gt;
+    &lt;h1 class&#x3D;&#x27;font-weight-bold text-center&#x27;&gt;{{title}}&lt;/h1&gt;
+    &lt;form [formGroup]&#x3D;&quot;addClient&quot; (ngSubmit)&#x3D;&quot;onSubmit()&quot; class&#x3D;&quot;p-4&quot;&gt;
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+            &lt;div class&#x3D;&quot;col-12 d-flex justify-content-center&quot;&gt;
+                &lt;img [src]&#x3D;&quot;&#x27;assets/imgs/clients/&#x27; + f.img.value&quot; [alt]&#x3D;&quot;client.firstName&quot; class&#x3D;&quot;rounded-circle&quot;
+                    width&#x3D;&quot;120&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;h3 class&#x3D;&quot;text-dark mt-4 mb-3 text-center&quot;&gt;პირადი ინფორმაცია&lt;/h3&gt;
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+            &lt;!--First Name--&gt;
+            &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+                &lt;label for&#x3D;&quot;firstName&quot; class&#x3D;&quot;form-label&quot;&gt;სახელი&lt;/label&gt;
+                &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;firstName&quot; formControlName&#x3D;&quot;firstName&quot;
+                    [ngClass]&#x3D;&quot;{&#x27;is-invalid&#x27;: f.firstName.errors &amp;&amp; (f.firstName.touched || f.firstName.dirty), &#x27;is-valid&#x27;:f.firstName.valid}&quot;
+                    required&gt;
+
+                &lt;!--Validation--&gt;
+                &lt;div *ngIf&#x3D;&quot;f.firstName.invalid &amp;&amp; (f.firstName.dirty || f.firstName.touched)&quot; class&#x3D;&quot;invalid-feedback&quot;&gt;
+                    &lt;validation-errors [errors]&#x3D;&quot;f.firstName.errors&quot; errSub&#x3D;&quot;სახელი&quot; minlen&#x3D;&quot;2 ასო-ბგერას&quot;
+                        maxlen&#x3D;&quot;50 ასო-ბგერას&quot; patterns&#x3D;&quot;შეიცავდეს მხოლოდ ქართულ ან ლათინურ ასო-ბგერებს&quot;&gt;
+                    &lt;/validation-errors&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!--Last Name--&gt;
+            &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+                &lt;label for&#x3D;&quot;lastName&quot; class&#x3D;&quot;form-label&quot;&gt;გვარი&lt;/label&gt;
+                &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;lastName&quot; formControlName&#x3D;&quot;lastName&quot;
+                    [ngClass]&#x3D;&quot;{&#x27;is-invalid&#x27;: f.lastName.errors &amp;&amp; (f.lastName.touched || f.lastName.dirty), &#x27;is-valid&#x27;:f.lastName.valid}&quot;
+                    required&gt;
+                &lt;!--Validation--&gt;
+                &lt;div *ngIf&#x3D;&quot;f.lastName.invalid &amp;&amp; (f.lastName.dirty || f.lastName.touched)&quot; class&#x3D;&quot;invalid-feedback&quot;&gt;
+                    &lt;validation-errors [errors]&#x3D;&quot;f.lastName.errors&quot; errSub&#x3D;&quot;გვარი&quot; minlen&#x3D;&quot;2 ასო-ბგერას&quot;
+                        maxlen&#x3D;&quot;50 ასო-ბგერას&quot; patterns&#x3D;&quot;შეიცავდეს მხოლოდ ქართულ ან ლათინურ ასო-ბგერებს&quot;&gt;
+                    &lt;/validation-errors&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;row mt-3&quot;&gt;
+            &lt;!--Gender--&gt;
+            &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+                &lt;label class&#x3D;&quot;form-label&quot;&gt;სქესი&lt;/label&gt;
+                &lt;select class&#x3D;&quot;form-select&quot;
+                    [ngClass]&#x3D;&quot;{&#x27;is-invalid&#x27;: f.gender.errors &amp;&amp; (f.gender.touched || f.gender.dirty), &#x27;is-valid&#x27;:f.gender.valid}&quot;
+                    formControlName&#x3D;&quot;gender&quot; (change)&#x3D;&quot;whichGender($any($event.target).value)&quot; required&gt;
+                    &lt;option selected&gt;აირჩიეთ სქესი&lt;/option&gt;
+                    &lt;option value&#x3D;&quot;მდედრობითი&quot;&gt;მდედრობითი&lt;/option&gt;
+                    &lt;option value&#x3D;&quot;მამრობითი&quot;&gt;მამრობითი&lt;/option&gt;
+                &lt;/select&gt;
+                &lt;!--Validation--&gt;
+                &lt;div *ngIf&#x3D;&quot;f.gender.invalid &amp;&amp; (f.gender.dirty || f.gender.touched)&quot; class&#x3D;&quot;invalid-feedback&quot;&gt;
+                    &lt;validation-errors [errors]&#x3D;&quot;f.gender.errors&quot; errSub&#x3D;&quot;სქესი&quot;&gt;&lt;/validation-errors&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+                &lt;label for&#x3D;&quot;idNumber&quot; class&#x3D;&quot;form-label&quot;&gt;პირადი ნომერი&lt;/label&gt;
+                &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;idNumber&quot; formControlName&#x3D;&quot;idNumber&quot;
+                    [ngClass]&#x3D;&quot;{&#x27;is-invalid&#x27;: f.idNumber.errors &amp;&amp; (f.idNumber.touched || f.idNumber.dirty), &#x27;is-valid&#x27;:f.idNumber.valid}&quot;
+                    required&gt;
+                &lt;!--Validation--&gt;
+                &lt;div *ngIf&#x3D;&quot;f.idNumber.invalid &amp;&amp; (f.idNumber.dirty || f.idNumber.touched)&quot; class&#x3D;&quot;invalid-feedback&quot;&gt;
+                    &lt;validation-errors [errors]&#x3D;&quot;f.idNumber.errors&quot; errSub&#x3D;&quot;პირადი ნომერი&quot; minlen&#x3D;&quot;11 ციფრს&quot;
+                        maxlen&#x3D;&quot;11 ციფრს&quot; patterns&#x3D;&quot;შეიცავდეს მხოლოდ ციფრებს&quot;&gt;&lt;/validation-errors&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;h3 class&#x3D;&quot;text-dark mt-5 mb-3 text-center&quot;&gt;საკონტაქტო ინფორმაცია&lt;/h3&gt;
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+            &lt;!--Phone Number--&gt;
+            &lt;div class&#x3D;&quot;col-7&quot;&gt;
+                &lt;label for&#x3D;&quot;phoneNumber&quot; class&#x3D;&quot;form-label&quot;&gt;ტელეფონის ნომერი&lt;/label&gt;
+                &lt;input type&#x3D;&quot;number&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;phoneNumber&quot; formControlName&#x3D;&quot;phoneNumber&quot;
+                    [ngClass]&#x3D;&quot;{&#x27;is-invalid&#x27;: f.phoneNumber.errors &amp;&amp; (f.phoneNumber.touched || f.phoneNumber.dirty), &#x27;is-valid&#x27;:f.phoneNumber.valid}&quot;
+                    placeholder&#x3D;&quot;xxx-xxx-xxx&quot; required&gt;
+                &lt;!--Validation--&gt;
+                &lt;div *ngIf&#x3D;&quot;f.phoneNumber.invalid &amp;&amp; (f.phoneNumber.dirty || f.phoneNumber.touched)&quot;
+                    class&#x3D;&quot;invalid-feedback&quot;&gt;
+                    &lt;validation-errors [errors]&#x3D;&quot;f.phoneNumber.errors&quot; errSub&#x3D;&quot;ტელეფონის ნომერი&quot; minlen&#x3D;&quot;9 ციფრს&quot;
+                        maxlen&#x3D;&quot;9 ციფრს&quot; patterns&#x3D;&quot;შეიცავდეს მხოლოდ ციფრებს და იწყებოდეს ციფრი 5-ით&quot;&gt;
+                    &lt;/validation-errors&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;h6 class&#x3D;&quot;mt-5 mb-3 text-secondary&quot;&gt;იურიდიული მისამართი&lt;/h6&gt;
+        &lt;div formGroupName&#x3D;&quot;mailingAddress&quot;&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;!--Mailing Country--&gt;
+                &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+                    &lt;label for&#x3D;&quot;mcountry&quot; class&#x3D;&quot;form-label&quot;&gt;ქვეყანა&lt;/label&gt;
+                    &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;mcountry&quot; formControlName&#x3D;&quot;country&quot;
+                        [ngClass]&#x3D;&quot;{&#x27;is-invalid&#x27;: Mailing.country.errors &amp;&amp; (Mailing.country.touched || Mailing.country.dirty), &#x27;is-valid&#x27;:Mailing.country.valid}&quot;
+                        required&gt;
+                    &lt;!--Validation--&gt;
+                    &lt;div *ngIf&#x3D;&quot;Mailing.country.invalid &amp;&amp; (Mailing.country.dirty || Mailing.country.touched)&quot;
+                        class&#x3D;&quot;invalid-feedback&quot;&gt;
+                        &lt;validation-errors [errors]&#x3D;&quot;Mailing.country.errors&quot; errSub&#x3D;&quot;ქვეყანა&quot;&gt;&lt;/validation-errors&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!--Mailing City--&gt;
+                &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+                    &lt;label for&#x3D;&quot;mcity&quot; class&#x3D;&quot;form-label&quot;&gt;ქალაქი&lt;/label&gt;
+                    &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;mcity&quot; formControlName&#x3D;&quot;city&quot;
+                        [ngClass]&#x3D;&quot;{&#x27;is-invalid&#x27;: Mailing.city.errors &amp;&amp; (Mailing.city.touched || Mailing.city.dirty), &#x27;is-valid&#x27;:Mailing.city.valid}&quot;
+                        required&gt;
+                    &lt;!--Validation--&gt;
+                    &lt;div *ngIf&#x3D;&quot;Mailing.city.invalid &amp;&amp; (Mailing.city.dirty || Mailing.city.touched)&quot;
+                        class&#x3D;&quot;invalid-feedback&quot;&gt;
+                        &lt;validation-errors [errors]&#x3D;&quot;Mailing.city.errors&quot; errSub&#x3D;&quot;ქალაქი&quot;&gt;&lt;/validation-errors&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!--Mailing Address--&gt;
+                &lt;div class&#x3D;&quot;col-12&quot;&gt;
+                    &lt;label for&#x3D;&quot;maddress&quot; class&#x3D;&quot;form-label&quot;&gt;მისამართი&lt;/label&gt;
+                    &lt;textarea class&#x3D;&quot;form-control&quot; id&#x3D;&quot;maddress&quot; formControlName&#x3D;&quot;address&quot;
+                        [ngClass]&#x3D;&quot;{&#x27;is-invalid&#x27;: Mailing.address.errors &amp;&amp; (Mailing.address.touched || Mailing.address.dirty), &#x27;is-valid&#x27;:Mailing.address.valid}&quot;
+                        required&gt;&lt;/textarea&gt;
+                    &lt;!--Validation--&gt;
+                    &lt;div *ngIf&#x3D;&quot;Mailing.address.invalid &amp;&amp; (Mailing.address.dirty || Mailing.address.touched)&quot;
+                        class&#x3D;&quot;invalid-feedback&quot;&gt;
+                        &lt;validation-errors [errors]&#x3D;&quot;Mailing.address.errors&quot; errSub&#x3D;&quot;მისამართი&quot;&gt;&lt;/validation-errors&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+
+        &lt;h6 class&#x3D;&quot;mt-5 mb-3 text-secondary&quot;&gt;ფიზიკური მისამართი&lt;/h6&gt;
+        &lt;input #checkSame class&#x3D;&quot;form-check-input mb-4 mt-2&quot; type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;sameAdd&quot;
+            (change)&#x3D;&quot;sameAdd(checkSame.checked);&quot; [checked]&#x3D;&quot;false&quot;&gt;
+        იგივე რაც იურიდიული მისამართი
+        &lt;div formGroupName&#x3D;&quot;physicalAddress&quot;&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;!--Physical Country--&gt;
+                &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+                    &lt;label for&#x3D;&quot;pcountry&quot; class&#x3D;&quot;form-label&quot;&gt;ქვეყანა&lt;/label&gt;
+                    &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;pcountry&quot; formControlName&#x3D;&quot;country&quot;
+                        [ngClass]&#x3D;&quot;{&#x27;is-invalid&#x27;: Physical.country.errors &amp;&amp; (Physical.country.touched || Physical.country.dirty), &#x27;is-valid&#x27;:Physical.country.valid}&quot;
+                        required&gt;
+                    &lt;!--Validation--&gt;
+                    &lt;div *ngIf&#x3D;&quot;Physical.country.invalid &amp;&amp; (Physical.country.dirty || Physical.country.touched)&quot;
+                        class&#x3D;&quot;invalid-feedback&quot;&gt;
+                        &lt;validation-errors [errors]&#x3D;&quot;Physical.country.errors&quot; errSub&#x3D;&quot;ქვეყანა&quot;&gt;&lt;/validation-errors&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!--Physical City--&gt;
+                &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+                    &lt;label for&#x3D;&quot;pcity&quot; class&#x3D;&quot;form-label&quot;&gt;ქალაქი&lt;/label&gt;
+                    &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;pcity&quot; formControlName&#x3D;&quot;city&quot;
+                        [ngClass]&#x3D;&quot;{&#x27;is-invalid&#x27;: Physical.city.errors &amp;&amp; (Physical.city.touched || Physical.city.dirty), &#x27;is-valid&#x27;:Physical.city.valid}&quot;
+                        required&gt;
+                    &lt;!--Validation--&gt;
+                    &lt;div *ngIf&#x3D;&quot;Physical.city.invalid &amp;&amp; (Physical.city.dirty || Physical.city.touched)&quot;
+                        class&#x3D;&quot;invalid-feedback&quot;&gt;
+                        &lt;validation-errors [errors]&#x3D;&quot;Physical.city.errors&quot; errSub&#x3D;&quot;ქალაქი&quot;&gt;&lt;/validation-errors&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!--Physical Address--&gt;
+                &lt;div class&#x3D;&quot;col-12&quot;&gt;
+                    &lt;label for&#x3D;&quot;paddress&quot; class&#x3D;&quot;form-label&quot;&gt;მისამართი&lt;/label&gt;
+                    &lt;textarea class&#x3D;&quot;form-control&quot; id&#x3D;&quot;paddress&quot; formControlName&#x3D;&quot;address&quot;
+                        [ngClass]&#x3D;&quot;{&#x27;is-invalid&#x27;: Physical.address.errors &amp;&amp; (Physical.address.touched || Physical.address.dirty), &#x27;is-valid&#x27;:Physical.address.valid}&quot;
+                        required&gt;&lt;/textarea&gt;
+                    &lt;!--Validation--&gt;
+                    &lt;div *ngIf&#x3D;&quot;Physical.address.invalid &amp;&amp; (Physical.address.dirty || Physical.address.touched)&quot;
+                        class&#x3D;&quot;invalid-feedback&quot;&gt;
+                        &lt;validation-errors [errors]&#x3D;&quot;Physical.address.errors&quot; errSub&#x3D;&quot;მისამართი&quot;&gt;&lt;/validation-errors&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!--Accounts--&gt;
+        &lt;div class&#x3D;&quot;row mt-4&quot;&gt;
+            &lt;div class&#x3D;&quot;col-12&quot;&gt;
+                &lt;p-button label&#x3D;&quot;ახალი ანგარიშის დამატება&quot; icon&#x3D;&quot;pi pi-plus&quot; styleClass&#x3D;&quot;p-button-sm p-button-outlined&quot;
+                    (click)&#x3D;&quot;addAccountButton()&quot;&gt;&lt;/p-button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+
+        &lt;div formArrayName&#x3D;&quot;accounts&quot; class&#x3D;&quot;mt-3&quot; *ngFor&#x3D;&quot;let acc of AccountsSelector.controls; let i &#x3D; index;&quot;&gt;
+            &lt;div [formGroupName]&#x3D;&quot;i&quot;&gt;
+                &lt;div class&#x3D;&quot;card border-primary&quot;&gt;
+                    &lt;div class&#x3D;&quot;card-body&quot;&gt;
+                        &lt;div class&#x3D;&quot;d-flex justify-content-end&quot;&gt;
+                            &lt;p-button label&#x3D;&quot;წაშლა&quot; icon&#x3D;&quot;pi pi-trash&quot;
+                                styleClass&#x3D;&quot;p-button-sm p-button-outlined p-button-danger&quot; (click)&#x3D;&quot;deleteAccount(i)&quot;
+                                *ngIf&#x3D;&quot;i&gt;0&quot;&gt;
+                            &lt;/p-button&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;row mt-3&quot;&gt;
+                            &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+                                &lt;!--Account Number--&gt;
+                                &lt;label [attr.for]&#x3D;&quot;&#x27;accNumber&#x27;+i&quot; class&#x3D;&quot;form-label&quot;&gt;ანგარიშის ნომერი&lt;/label&gt;
+                                &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; [id]&#x3D;&quot;&#x27;accNumber&#x27;+i&quot; formControlName&#x3D;&quot;accNumber&quot;
+                                    [ngClass]&#x3D;&quot;{&#x27;is-invalid&#x27;: AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;accNumber&#x27;)?.errors &amp;&amp; (AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;accNumber&#x27;)?.touched || AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;accNumber&#x27;)?.dirty), &#x27;is-valid&#x27;:AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;accNumber&#x27;)?.valid}&quot;
+                                    required&gt;
+
+                                &lt;!--Account Number Validation--&gt;
+                                &lt;div *ngIf&#x3D;&quot;AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;accNumber&#x27;)?.invalid &amp;&amp; (AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;accNumber&#x27;)?.dirty || AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;accNumber&#x27;)?.touched)&quot;
+                                    class&#x3D;&#x27;invalid-feedback&#x27;&gt;
+                                    &lt;validation-errors
+                                        [errors]&#x3D;&quot;AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;accNumber&#x27;)?.errors&quot;
+                                        errSub&#x3D;&quot;ანგარიშის ნომერი&quot;&gt;
+                                    &lt;/validation-errors&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+                                &lt;!--Account Type--&gt;
+                                &lt;label class&#x3D;&quot;form-label&quot;&gt;ანგარიშის ტიპი&lt;/label&gt;
+                                    &lt;select class&#x3D;&quot;form-select&quot; formControlName&#x3D;&quot;accType&quot;
+                                        [ngClass]&#x3D;&quot;{&#x27;is-invalid&#x27;: AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;accType&#x27;)?.errors &amp;&amp; (AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;accType&#x27;)?.touched || AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;accType&#x27;)?.dirty), &#x27;is-valid&#x27;:AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;accType&#x27;)?.valid}&quot;
+                                        required&gt;
+                                        &lt;option selected&gt;აირჩიეთ ანგარიშის ტიპი&lt;/option&gt;
+                                        &lt;option value&#x3D;&quot;მიმდინარე&quot;&gt;მიმდინარე&lt;/option&gt;
+                                        &lt;option value&#x3D;&quot;შემნახველი&quot;&gt;შემნახველი&lt;/option&gt;
+                                        &lt;option value&#x3D;&quot;დაგროვებითი&quot;&gt;დაგროვებითი&lt;/option&gt;
+                                    &lt;/select&gt;
+                                &lt;!--Account Type Validation--&gt;
+                                &lt;div *ngIf&#x3D;&quot;AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;accType&#x27;)?.invalid &amp;&amp; (AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;accType&#x27;)?.dirty || AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;accType&#x27;)?.touched)&quot;
+                                    class&#x3D;&#x27;invalid-feedback&#x27;&gt;
+                                    &lt;validation-errors [errors]&#x3D;&quot;AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;accType&#x27;)?.errors&quot;
+                                        errSub&#x3D;&quot;ანგარიშის ტიპი&quot;&gt;
+                                    &lt;/validation-errors&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;row mt-4&quot;&gt;
+                            &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+                                &lt;!--Valute--&gt;
+                                &lt;!--
+                                  #FIXME  MultiSelect has issues on PrimeNG, Bootstrap &amp; Angular Material, so at this moment leaving it as a single option select.
+                                --&gt;
+                                &lt;label class&#x3D;&quot;form-label&quot;&gt;ვალუტა&lt;/label&gt;
+                                    &lt;select class&#x3D;&quot;form-select&quot; formControlName&#x3D;&quot;valute&quot;
+                                        [ngClass]&#x3D;&quot;{&#x27;is-invalid&#x27;: AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;valute&#x27;)?.errors &amp;&amp; (AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;valute&#x27;)?.touched || AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;valute&#x27;)?.dirty), &#x27;is-valid&#x27;:AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;valute&#x27;)?.valid}&quot;
+                                        required&gt;
+                                        &lt;option value&#x3D;&quot;GEL&quot;&gt;GEL&lt;/option&gt;
+                                        &lt;option value&#x3D;&quot;USD&quot;&gt;USD&lt;/option&gt;
+                                        &lt;option value&#x3D;&quot;EUR&quot;&gt;EUR&lt;/option&gt;
+                                        &lt;option value&#x3D;&quot;RUB&quot;&gt;RUB&lt;/option&gt;
+                                    &lt;/select&gt;
+                                &lt;!--Valute Validation--&gt;
+                                &lt;div *ngIf&#x3D;&quot;AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;valute&#x27;)?.invalid &amp;&amp; (AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;valute&#x27;)?.dirty || AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;valute&#x27;)?.touched)&quot;
+                                    class&#x3D;&quot;invalid-feedback&quot;&gt;
+                                    &lt;validation-errors [errors]&#x3D;&quot;AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;valute&#x27;)?.errors&quot;
+                                        errSub&#x3D;&quot;ერთი ან რამდენიმე ვალუტა&quot;&gt;
+                                    &lt;/validation-errors&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+                                &lt;!--Account Status--&gt;
+                                &lt;label class&#x3D;&quot;form-label&quot;&gt;ანგარიშის სტატუსი&lt;/label&gt;
+                                    &lt;select class&#x3D;&quot;form-select&quot; formControlName&#x3D;&quot;accStatus&quot;
+                                        [ngClass]&#x3D;&quot;{&#x27;is-invalid&#x27;: AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;accStatus&#x27;)?.errors &amp;&amp; (AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;accStatus&#x27;)?.touched || AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;accStatus&#x27;)?.dirty), &#x27;is-valid&#x27;:AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;accStatus&#x27;)?.valid}&quot;
+                                        required&gt;
+                                        &lt;option selected&gt;ანგარიშის სტატუსი&lt;/option&gt;
+                                        &lt;option value&#x3D;&quot;აქტიური&quot;&gt;აქტიური&lt;/option&gt;
+                                        &lt;option value&#x3D;&quot;დახურული&quot;&gt;დახურული&lt;/option&gt;
+                                    &lt;/select&gt;
+                                &lt;!--Account Status Validation--&gt;
+                                &lt;div *ngIf&#x3D;&quot;AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;accStatus&#x27;)?.invalid &amp;&amp; (AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;accStatus&#x27;)?.dirty || AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;accStatus&#x27;)?.touched)&quot;
+                                    class&#x3D;&quot;invalid-feedback&quot;&gt;
+                                    &lt;validation-errors
+                                        [errors]&#x3D;&quot;AccountsSelector[&#x27;controls&#x27;][i].get(&#x27;accStatus&#x27;)?.errors&quot;
+                                        errSub&#x3D;&quot;ანგარიშის სტატუსი&quot;&gt;
+                                    &lt;/validation-errors&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-12 mt-5&quot;&gt;
+            &lt;button class&#x3D;&quot;btn btn-outline-success&quot; type&#x3D;&quot;submit&quot; [disabled]&#x3D;&quot;!addClient.valid&quot;&gt;შენახვა&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+&lt;/p-dialog&gt;
+&lt;logout-btn&gt;&lt;/logout-btn&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./add-edit.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">h6 {
+    font-size: 1.2rem;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><p-dialog [(visible)]="display" [style]="{width: \'55vw\'}" [blockScroll]="true" [modal]="true" (onHide)="go()">    <h1 class=\'font-weight-bold text-center\'>{{title}}</h1>    <form [formGroup]="addClient" (ngSubmit)="onSubmit()" class="p-4">        <div class="row">            <div class="col-12 d-flex justify-content-center">                <img [src]="\'assets/imgs/clients/\' + f.img.value" [alt]="client.firstName" class="rounded-circle"                    width="120">            </div>        </div>        <h3 class="text-dark mt-4 mb-3 text-center">პირადი ინფორმაცია</h3>        <div class="row">            <!--First Name-->            <div class="col-md-6">                <label for="firstName" class="form-label">სახელი</label>                <input type="text" class="form-control" id="firstName" formControlName="firstName"                    [ngClass]="{\'is-invalid\': f.firstName.errors && (f.firstName.touched || f.firstName.dirty), \'is-valid\':f.firstName.valid}"                    required>                <!--Validation-->                <div *ngIf="f.firstName.invalid && (f.firstName.dirty || f.firstName.touched)" class="invalid-feedback">                    <validation-errors [errors]="f.firstName.errors" errSub="სახელი" minlen="2 ასო-ბგერას"                        maxlen="50 ასო-ბგერას" patterns="შეიცავდეს მხოლოდ ქართულ ან ლათინურ ასო-ბგერებს">                    </validation-errors>                </div>            </div>            <!--Last Name-->            <div class="col-md-6">                <label for="lastName" class="form-label">გვარი</label>                <input type="text" class="form-control" id="lastName" formControlName="lastName"                    [ngClass]="{\'is-invalid\': f.lastName.errors && (f.lastName.touched || f.lastName.dirty), \'is-valid\':f.lastName.valid}"                    required>                <!--Validation-->                <div *ngIf="f.lastName.invalid && (f.lastName.dirty || f.lastName.touched)" class="invalid-feedback">                    <validation-errors [errors]="f.lastName.errors" errSub="გვარი" minlen="2 ასო-ბგერას"                        maxlen="50 ასო-ბგერას" patterns="შეიცავდეს მხოლოდ ქართულ ან ლათინურ ასო-ბგერებს">                    </validation-errors>                </div>            </div>        </div>        <div class="row mt-3">            <!--Gender-->            <div class="col-md-6">                <label class="form-label">სქესი</label>                <select class="form-select"                    [ngClass]="{\'is-invalid\': f.gender.errors && (f.gender.touched || f.gender.dirty), \'is-valid\':f.gender.valid}"                    formControlName="gender" (change)="whichGender($any($event.target).value)" required>                    <option selected>აირჩიეთ სქესი</option>                    <option value="მდედრობითი">მდედრობითი</option>                    <option value="მამრობითი">მამრობითი</option>                </select>                <!--Validation-->                <div *ngIf="f.gender.invalid && (f.gender.dirty || f.gender.touched)" class="invalid-feedback">                    <validation-errors [errors]="f.gender.errors" errSub="სქესი"></validation-errors>                </div>            </div>            <div class="col-md-6">                <label for="idNumber" class="form-label">პირადი ნომერი</label>                <input type="text" class="form-control" id="idNumber" formControlName="idNumber"                    [ngClass]="{\'is-invalid\': f.idNumber.errors && (f.idNumber.touched || f.idNumber.dirty), \'is-valid\':f.idNumber.valid}"                    required>                <!--Validation-->                <div *ngIf="f.idNumber.invalid && (f.idNumber.dirty || f.idNumber.touched)" class="invalid-feedback">                    <validation-errors [errors]="f.idNumber.errors" errSub="პირადი ნომერი" minlen="11 ციფრს"                        maxlen="11 ციფრს" patterns="შეიცავდეს მხოლოდ ციფრებს"></validation-errors>                </div>            </div>        </div>        <h3 class="text-dark mt-5 mb-3 text-center">საკონტაქტო ინფორმაცია</h3>        <div class="row">            <!--Phone Number-->            <div class="col-7">                <label for="phoneNumber" class="form-label">ტელეფონის ნომერი</label>                <input type="number" class="form-control" id="phoneNumber" formControlName="phoneNumber"                    [ngClass]="{\'is-invalid\': f.phoneNumber.errors && (f.phoneNumber.touched || f.phoneNumber.dirty), \'is-valid\':f.phoneNumber.valid}"                    placeholder="xxx-xxx-xxx" required>                <!--Validation-->                <div *ngIf="f.phoneNumber.invalid && (f.phoneNumber.dirty || f.phoneNumber.touched)"                    class="invalid-feedback">                    <validation-errors [errors]="f.phoneNumber.errors" errSub="ტელეფონის ნომერი" minlen="9 ციფრს"                        maxlen="9 ციფრს" patterns="შეიცავდეს მხოლოდ ციფრებს და იწყებოდეს ციფრი 5-ით">                    </validation-errors>                </div>            </div>        </div>        <h6 class="mt-5 mb-3 text-secondary">იურიდიული მისამართი</h6>        <div formGroupName="mailingAddress">            <div class="row">                <!--Mailing Country-->                <div class="col-md-6">                    <label for="mcountry" class="form-label">ქვეყანა</label>                    <input type="text" class="form-control" id="mcountry" formControlName="country"                        [ngClass]="{\'is-invalid\': Mailing.country.errors && (Mailing.country.touched || Mailing.country.dirty), \'is-valid\':Mailing.country.valid}"                        required>                    <!--Validation-->                    <div *ngIf="Mailing.country.invalid && (Mailing.country.dirty || Mailing.country.touched)"                        class="invalid-feedback">                        <validation-errors [errors]="Mailing.country.errors" errSub="ქვეყანა"></validation-errors>                    </div>                </div>                <!--Mailing City-->                <div class="col-md-6">                    <label for="mcity" class="form-label">ქალაქი</label>                    <input type="text" class="form-control" id="mcity" formControlName="city"                        [ngClass]="{\'is-invalid\': Mailing.city.errors && (Mailing.city.touched || Mailing.city.dirty), \'is-valid\':Mailing.city.valid}"                        required>                    <!--Validation-->                    <div *ngIf="Mailing.city.invalid && (Mailing.city.dirty || Mailing.city.touched)"                        class="invalid-feedback">                        <validation-errors [errors]="Mailing.city.errors" errSub="ქალაქი"></validation-errors>                    </div>                </div>                <!--Mailing Address-->                <div class="col-12">                    <label for="maddress" class="form-label">მისამართი</label>                    <textarea class="form-control" id="maddress" formControlName="address"                        [ngClass]="{\'is-invalid\': Mailing.address.errors && (Mailing.address.touched || Mailing.address.dirty), \'is-valid\':Mailing.address.valid}"                        required></textarea>                    <!--Validation-->                    <div *ngIf="Mailing.address.invalid && (Mailing.address.dirty || Mailing.address.touched)"                        class="invalid-feedback">                        <validation-errors [errors]="Mailing.address.errors" errSub="მისამართი"></validation-errors>                    </div>                </div>            </div>        </div>        <h6 class="mt-5 mb-3 text-secondary">ფიზიკური მისამართი</h6>        <input #checkSame class="form-check-input mb-4 mt-2" type="checkbox" id="sameAdd"            (change)="sameAdd(checkSame.checked);" [checked]="false">        იგივე რაც იურიდიული მისამართი        <div formGroupName="physicalAddress">            <div class="row">                <!--Physical Country-->                <div class="col-md-6">                    <label for="pcountry" class="form-label">ქვეყანა</label>                    <input type="text" class="form-control" id="pcountry" formControlName="country"                        [ngClass]="{\'is-invalid\': Physical.country.errors && (Physical.country.touched || Physical.country.dirty), \'is-valid\':Physical.country.valid}"                        required>                    <!--Validation-->                    <div *ngIf="Physical.country.invalid && (Physical.country.dirty || Physical.country.touched)"                        class="invalid-feedback">                        <validation-errors [errors]="Physical.country.errors" errSub="ქვეყანა"></validation-errors>                    </div>                </div>                <!--Physical City-->                <div class="col-md-6">                    <label for="pcity" class="form-label">ქალაქი</label>                    <input type="text" class="form-control" id="pcity" formControlName="city"                        [ngClass]="{\'is-invalid\': Physical.city.errors && (Physical.city.touched || Physical.city.dirty), \'is-valid\':Physical.city.valid}"                        required>                    <!--Validation-->                    <div *ngIf="Physical.city.invalid && (Physical.city.dirty || Physical.city.touched)"                        class="invalid-feedback">                        <validation-errors [errors]="Physical.city.errors" errSub="ქალაქი"></validation-errors>                    </div>                </div>                <!--Physical Address-->                <div class="col-12">                    <label for="paddress" class="form-label">მისამართი</label>                    <textarea class="form-control" id="paddress" formControlName="address"                        [ngClass]="{\'is-invalid\': Physical.address.errors && (Physical.address.touched || Physical.address.dirty), \'is-valid\':Physical.address.valid}"                        required></textarea>                    <!--Validation-->                    <div *ngIf="Physical.address.invalid && (Physical.address.dirty || Physical.address.touched)"                        class="invalid-feedback">                        <validation-errors [errors]="Physical.address.errors" errSub="მისამართი"></validation-errors>                    </div>                </div>            </div>        </div>        <!--Accounts-->        <div class="row mt-4">            <div class="col-12">                <p-button label="ახალი ანგარიშის დამატება" icon="pi pi-plus" styleClass="p-button-sm p-button-outlined"                    (click)="addAccountButton()"></p-button>            </div>        </div>        <div formArrayName="accounts" class="mt-3" *ngFor="let acc of AccountsSelector.controls; let i = index;">            <div [formGroupName]="i">                <div class="card border-primary">                    <div class="card-body">                        <div class="d-flex justify-content-end">                            <p-button label="წაშლა" icon="pi pi-trash"                                styleClass="p-button-sm p-button-outlined p-button-danger" (click)="deleteAccount(i)"                                *ngIf="i>0">                            </p-button>                        </div>                        <div class="row mt-3">                            <div class="col-md-6">                                <!--Account Number-->                                <label [attr.for]="\'accNumber\'+i" class="form-label">ანგარიშის ნომერი</label>                                <input type="text" class="form-control" [id]="\'accNumber\'+i" formControlName="accNumber"                                    [ngClass]="{\'is-invalid\': AccountsSelector[\'controls\'][i].get(\'accNumber\')?.errors && (AccountsSelector[\'controls\'][i].get(\'accNumber\')?.touched || AccountsSelector[\'controls\'][i].get(\'accNumber\')?.dirty), \'is-valid\':AccountsSelector[\'controls\'][i].get(\'accNumber\')?.valid}"                                    required>                                <!--Account Number Validation-->                                <div *ngIf="AccountsSelector[\'controls\'][i].get(\'accNumber\')?.invalid && (AccountsSelector[\'controls\'][i].get(\'accNumber\')?.dirty || AccountsSelector[\'controls\'][i].get(\'accNumber\')?.touched)"                                    class=\'invalid-feedback\'>                                    <validation-errors                                        [errors]="AccountsSelector[\'controls\'][i].get(\'accNumber\')?.errors"                                        errSub="ანგარიშის ნომერი">                                    </validation-errors>                                </div>                            </div>                            <div class="col-md-6">                                <!--Account Type-->                                <label class="form-label">ანგარიშის ტიპი</label>                                    <select class="form-select" formControlName="accType"                                        [ngClass]="{\'is-invalid\': AccountsSelector[\'controls\'][i].get(\'accType\')?.errors && (AccountsSelector[\'controls\'][i].get(\'accType\')?.touched || AccountsSelector[\'controls\'][i].get(\'accType\')?.dirty), \'is-valid\':AccountsSelector[\'controls\'][i].get(\'accType\')?.valid}"                                        required>                                        <option selected>აირჩიეთ ანგარიშის ტიპი</option>                                        <option value="მიმდინარე">მიმდინარე</option>                                        <option value="შემნახველი">შემნახველი</option>                                        <option value="დაგროვებითი">დაგროვებითი</option>                                    </select>                                <!--Account Type Validation-->                                <div *ngIf="AccountsSelector[\'controls\'][i].get(\'accType\')?.invalid && (AccountsSelector[\'controls\'][i].get(\'accType\')?.dirty || AccountsSelector[\'controls\'][i].get(\'accType\')?.touched)"                                    class=\'invalid-feedback\'>                                    <validation-errors [errors]="AccountsSelector[\'controls\'][i].get(\'accType\')?.errors"                                        errSub="ანგარიშის ტიპი">                                    </validation-errors>                                </div>                            </div>                        </div>                        <div class="row mt-4">                            <div class="col-md-6">                                <!--Valute-->                                <!--                                  #FIXME  MultiSelect has issues on PrimeNG, Bootstrap & Angular Material, so at this moment leaving it as a single option select.                                -->                                <label class="form-label">ვალუტა</label>                                    <select class="form-select" formControlName="valute"                                        [ngClass]="{\'is-invalid\': AccountsSelector[\'controls\'][i].get(\'valute\')?.errors && (AccountsSelector[\'controls\'][i].get(\'valute\')?.touched || AccountsSelector[\'controls\'][i].get(\'valute\')?.dirty), \'is-valid\':AccountsSelector[\'controls\'][i].get(\'valute\')?.valid}"                                        required>                                        <option value="GEL">GEL</option>                                        <option value="USD">USD</option>                                        <option value="EUR">EUR</option>                                        <option value="RUB">RUB</option>                                    </select>                                <!--Valute Validation-->                                <div *ngIf="AccountsSelector[\'controls\'][i].get(\'valute\')?.invalid && (AccountsSelector[\'controls\'][i].get(\'valute\')?.dirty || AccountsSelector[\'controls\'][i].get(\'valute\')?.touched)"                                    class="invalid-feedback">                                    <validation-errors [errors]="AccountsSelector[\'controls\'][i].get(\'valute\')?.errors"                                        errSub="ერთი ან რამდენიმე ვალუტა">                                    </validation-errors>                                </div>                            </div>                            <div class="col-md-6">                                <!--Account Status-->                                <label class="form-label">ანგარიშის სტატუსი</label>                                    <select class="form-select" formControlName="accStatus"                                        [ngClass]="{\'is-invalid\': AccountsSelector[\'controls\'][i].get(\'accStatus\')?.errors && (AccountsSelector[\'controls\'][i].get(\'accStatus\')?.touched || AccountsSelector[\'controls\'][i].get(\'accStatus\')?.dirty), \'is-valid\':AccountsSelector[\'controls\'][i].get(\'accStatus\')?.valid}"                                        required>                                        <option selected>ანგარიშის სტატუსი</option>                                        <option value="აქტიური">აქტიური</option>                                        <option value="დახურული">დახურული</option>                                    </select>                                <!--Account Status Validation-->                                <div *ngIf="AccountsSelector[\'controls\'][i].get(\'accStatus\')?.invalid && (AccountsSelector[\'controls\'][i].get(\'accStatus\')?.dirty || AccountsSelector[\'controls\'][i].get(\'accStatus\')?.touched)"                                    class="invalid-feedback">                                    <validation-errors                                        [errors]="AccountsSelector[\'controls\'][i].get(\'accStatus\')?.errors"                                        errSub="ანგარიშის სტატუსი">                                    </validation-errors>                                </div>                            </div>                        </div>                    </div>                </div>            </div>        </div>        <div class="col-12 mt-5">            <button class="btn btn-outline-success" type="submit" [disabled]="!addClient.valid">შენახვა</button>        </div>    </form></p-dialog><logout-btn></logout-btn></div>'
+    var COMPONENTS = [{'name': 'AddEditComponent', 'selector': 'app-add-edit'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ClientDetailsComponent', 'selector': 'app-client-details'},{'name': 'ClientListComponent', 'selector': 'app-client-list'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LogoutBtnComponent', 'selector': 'logout-btn'},{'name': 'ReusableCardComponent', 'selector': 'reusable-card'},{'name': 'ValidationErrorsComponent', 'selector': 'validation-errors'}];
+    var DIRECTIVES = [{'name': 'AddEditResolverDirective', 'selector': '[appAddEditResolver]'}];
+    var ACTUAL_COMPONENT = {'name': 'AddEditComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'AddEditComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       
+       <script type="module" src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
